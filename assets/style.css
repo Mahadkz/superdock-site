@@ -39,15 +39,15 @@ header.nav { position: sticky; top: 0; z-index: 50; height: 48px; background: rg
 .btn.text::after { content: " ›"; }
 .btn.text:hover { text-decoration: underline; }
 
-/* hero — Apple product hero: centered headline, product image below */
-.hero { text-align: center; padding: 68px 0 0; background: var(--bg); }
+/* hero — Apple product hero: centered headline, one lead video below */
+.hero { text-align: center; padding: 84px 0 0; background: var(--bg); }
 .hero .eyebrow { font-size: 21px; font-weight: 600; color: var(--ink); margin: 0 0 6px; }
-.hero h1 { font-size: clamp(40px, 6.4vw, 80px); font-weight: 600; letter-spacing: -0.015em; line-height: 1.05; margin: 0 0 10px; }
-.hero .sub { font-size: clamp(19px, 2.4vw, 26px); font-weight: 400; color: var(--ink); max-width: 640px; margin: 0 auto 22px; line-height: 1.28; }
+.hero h1 { font-size: clamp(44px, 6.8vw, 88px); font-weight: 600; letter-spacing: -0.018em; line-height: 1.05; margin: 0 0 14px; }
+.hero .sub { font-size: clamp(19px, 2.4vw, 27px); font-weight: 400; color: var(--ink); max-width: 660px; margin: 0 auto 26px; line-height: 1.26; }
 .hero .actions { display: flex; gap: 26px; justify-content: center; align-items: center; margin-bottom: 6px; }
 .hero .note { font-size: 13px; color: var(--muted); margin-top: 18px; }
-.hero .shot { margin-top: 44px; }
-.hero .shot img { width: 100%; display: block; }
+.hero .demo { margin: 56px auto 0; max-width: 900px; padding: 0 22px; }
+.hero .demo video { width: 100%; border-radius: 18px; display: block; box-shadow: 0 30px 80px -40px rgba(0,0,0,.4); }
 
 /* section — Apple centered feature block */
 .feat { text-align: center; padding: 100px 0 0; }
@@ -60,7 +60,9 @@ header.nav { position: sticky; top: 0; z-index: 50; height: 48px; background: rg
 .feat p { font-size: clamp(17px, 2vw, 21px); color: var(--muted); max-width: 620px; margin: 0 auto; line-height: 1.4; }
 .feat .shot { margin-top: 44px; padding-bottom: 100px; }
 .feat .shot.flush { padding-bottom: 0; }
-.feat .shot img { width: 100%; max-width: 1100px; margin: 0 auto; display: block; }
+.feat .shot img, .feat .shot video { width: 100%; max-width: 1000px; margin: 0 auto; display: block; }
+.feat .shot video { border-radius: 18px; }
+.feat.dark .shot video { border-radius: 18px; }
 .feat.dark .shot img { border-radius: 0; }
 
 /* two-up cards (Apple grid tiles) */
