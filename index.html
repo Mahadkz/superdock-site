@@ -1,9 +1,9 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Split Dock — one Dock icon per Chrome profile</title>
-<meta name="description" content="A Mac Dock that gives every Chrome profile its own icon, with window previews and an instant window overview. Everything else looks exactly like your Mac.">
+<title>Split Dock</title>
+<meta name="description" content="A Mac Dock that gives every browser profile its own icon, with window previews and an instant window overview. Everything else looks exactly like your Mac.">
 <meta property="og:title" content="Split Dock">
-<meta property="og:description" content="macOS sees one Chrome. You run six. Split Dock gives every profile its own icon.">
+<meta property="og:description" content="Every browser profile, its own Dock icon.">
 <meta property="og:image" content="/splitdock/assets/hero.jpg">
 <link rel="icon" href="/splitdock/assets/mark.png">
 <link rel="stylesheet" href="/splitdock/assets/style.css">
@@ -11,118 +11,99 @@
 
 <header class="nav"><div class="wrap">
   <a class="brand" href="/splitdock/"><img src="/splitdock/assets/mark.png" alt="">Split Dock</a>
-  <nav>
+  <div class="links">
     <a href="#profiles">Profiles</a>
     <a href="#previews">Previews</a>
     <a href="#overview">Overview</a>
-    <a href="#pricing">Pricing</a>
     <a href="/splitdock/blog/">Blog</a>
-    <a class="btn primary" href="#pricing">Try it free</a>
-  </nav>
+    <a class="buy" href="#pricing">Buy</a>
+  </div>
 </div></header>
 
-<header class="hero">
-  <img class="bleed" src="/splitdock/assets/hero.jpg" alt="Split Dock on a Mac desktop, three Chrome profiles as separate icons">
-  <div class="scrim"></div>
-  <div class="inner">
-    <span class="trialchip"><b>14 days free</b> · no account · macOS 13+</span>
-    <h1>The dock that tells<br>your profiles <span class="acc">apart.</span></h1>
-    <p class="sub">macOS folds every Chrome profile into one icon. Split Dock gives each its own, and leaves the rest of your Mac exactly as it was.</p>
-    <div class="actions">
-      <a class="btn primary" href="#pricing">Try it free</a>
-      <a class="btn ghost" href="#profiles">See how it works</a>
-    </div>
+<section class="hero">
+  <p class="eyebrow">Split Dock</p>
+  <h1>Every profile,<br>its own icon.</h1>
+  <p class="sub">Your Mac gives every browser profile one shared icon. Split Dock gives each its own, and leaves the rest of your Mac exactly as it is.</p>
+  <div class="actions">
+    <a class="btn primary" href="#pricing">Try it free</a>
+    <a class="btn text" href="#profiles">See how it works</a>
   </div>
-</header>
+  <p class="note">14 days free. No account. macOS 13 or later.</p>
+  <div class="shot"><img src="/splitdock/assets/hero.jpg" alt="Split Dock on a Mac desktop with three browser profiles as separate icons"></div>
+</section>
 
-<section class="problem"><div class="wrap">
-  <div class="panel">
-    <div class="idx">01</div>
-    <h2>macOS sees one Chrome.<br>You run six.</h2>
-    <p>Every Chrome profile shares one process, so the Dock collapses them into a single icon. Switching between work, clients and personal becomes a guessing game behind one tile.</p>
-  </div>
-  <div class="media"><img src="/splitdock/assets/compare.jpg" alt="One collapsed Chrome icon versus three separate profile tiles"></div>
-</div></section>
+<section class="feat grey" id="profiles">
+  <p class="k">Profiles</p>
+  <h2>One icon for every you.</h2>
+  <p>Work, client, personal. Each profile gets its own tile with its own avatar, using your real browser. No second copy, no logging in again. Pin, drag and arrange them like any app.</p>
+  <div class="shot"><img src="/splitdock/assets/split.jpg" alt="Three browser profiles as separate Dock tiles labelled Work, Client and Personal"></div>
+</section>
 
-<section class="feature" id="profiles"><div class="wrap">
-  <div class="txt">
-    <div class="idx">02</div>
-    <div class="eyebrow">The one thing no dock can do</div>
-    <h2>One icon per profile.</h2>
-    <p>Split Dock draws its own tiles. Each profile gets its own icon with its own avatar, using your real Chrome. No second copy eating memory, no logging in again.</p>
-    <p>Pin, unpin and drag a profile tile like any app icon. You cannot tell it apart from a normal one.</p>
-  </div>
-  <div class="media"><img src="/splitdock/assets/split.jpg" alt="Three Chrome profiles as separate Dock tiles"></div>
-</div></section>
+<section class="feat" id="previews">
+  <p class="k">Previews</p>
+  <h2>See a window before you switch.</h2>
+  <p>Hover a tile to preview its open windows. Hover a profile and you see only that profile's windows, nothing from your other identities leaks in.</p>
+  <div class="shot"><img src="/splitdock/assets/previews.jpg" alt="Window previews floating above a highlighted profile tile"></div>
+</section>
 
-<section class="feature flip" id="previews"><div class="wrap">
-  <div class="txt">
-    <div class="idx">03</div>
-    <div class="eyebrow">Know before you click</div>
-    <h2>Previews that stay in their lane.</h2>
-    <p>Hover a tile to see its windows before you switch. Editor windows lead with the workspace, not the file, so you land on the right one first time.</p>
-    <p>Hover a profile and you see only that profile's windows. Nothing from your other identities leaks in.</p>
-  </div>
-  <div class="media"><img src="/splitdock/assets/previews.jpg" alt="Window previews above a Chrome profile tile"></div>
-</div></section>
+<section class="feat dark" id="overview">
+  <p class="k">Overview</p>
+  <h2>Every window, one click away.</h2>
+  <p>Click the empty right of the dock and everything you have open fans out at once. Click the left to clear the desktop. Both are yours to set, or turn off.</p>
+  <div class="shot flush"><img src="/splitdock/assets/overview.jpg" alt="A grid overview of every open window above the dock"></div>
+</section>
 
-<section class="feature" id="overview"><div class="wrap">
-  <div class="txt">
-    <div class="idx">04</div>
-    <div class="eyebrow">One click, every window</div>
-    <h2>The whole desktop, at a glance.</h2>
-    <p>Click the empty right side of the dock and every window fans out at once. See all your work and jump straight to the one you need.</p>
-    <p>Click the left side to clear the desktop. Both are yours to set, or switch off, in a tap.</p>
+<section class="feat grey">
+  <p class="k">Native</p>
+  <h2>You can't tell it from Apple's.</h2>
+  <p>Icon size, spacing and sharpness are measured against the real Dock, down to the pixel. Light, dark and accent follow the system. Set it up and you forget it is not built in.</p>
+</section>
+<div class="tiles">
+  <div class="tile">
+    <div class="stat">2.8<span>× less RAM</span></div>
+    <p>No second browser process. Other tools run a separate copy per identity and make you log in again. Split Dock does neither.</p>
   </div>
-  <div class="media"><img src="/splitdock/assets/overview.jpg" alt="A grid overview of all open windows above the dock"></div>
-</div></section>
+  <div class="tile dark">
+    <h3>Every display</h3>
+    <p>One dock per screen, with running apps on the screen their windows are on.</p>
+  </div>
+  <div class="tile dark">
+    <h3>One permission</h3>
+    <p>Onboarding asks for Accessibility, and nothing alarming.</p>
+  </div>
+  <div class="tile">
+    <h3>Always current</h3>
+    <p>Signed, notarized, and updated quietly in the background.</p>
+  </div>
+</div>
 
-<section class="bento-sec"><div class="wrap">
-  <div class="head">
-    <h2>Indistinguishable from Apple's.</h2>
-    <p>The profile feature is the point. Everything around it is built to feel like it shipped with your Mac.</p>
-  </div>
-  <div class="bento">
-    <div class="tile big">
-      <div class="dot"></div>
-      <h3>Pixel-matched to macOS</h3>
-      <p>Icon size, spacing and sharpness measured against the real Dock, down to the pixel. Light, dark and accent follow the system. Set it up and you forget it is not Apple's.</p>
-    </div>
-    <div class="tile small"><h3>Every display</h3><p>One dock per screen, and running apps on the screen their windows are on.</p></div>
-    <div class="tile small"><h3>Pin and drag</h3><p>Profile tiles behave like any app icon.</p></div>
-    <div class="tile wide">
-      <div class="big-num">2.8<span class="u">× less RAM</span></div>
-      <p>No second Chrome process. Other tools run a separate copy per identity and make you log in again. Split Dock does neither.</p>
-    </div>
-    <div class="tile small"><h3>One permission</h3><p>Onboarding asks for Accessibility, nothing alarming.</p></div>
-    <div class="tile small"><h3>Updates itself</h3><p>Signed, notarized, current in the background.</p></div>
-  </div>
-</div></section>
-
-<section class="pricing" id="pricing"><div class="wrap">
-  <div class="plaque">
-    <div class="tag">Split Dock</div>
-    <div class="price">$4.99<span class="per"> / month</span></div>
+<section class="pricing" id="pricing">
+  <h2>Simple pricing.</h2>
+  <p class="lead">Free to try for 14 days. No card.</p>
+  <div class="plan">
+    <div class="price">$4.99<span> / month</span></div>
     <ul>
-      <li>Every Chrome profile its own icon</li>
+      <li>Every profile its own icon</li>
       <li>Window previews and overview</li>
       <li>Use on all your Macs</li>
-      <li>Every update, always current</li>
+      <li>Always up to date</li>
       <li>Cancel any time</li>
     </ul>
-    <a class="btn primary" href="#" data-checkout>Start 14-day free trial</a>
+    <a class="btn primary" href="#" data-checkout>Start free trial</a>
   </div>
-  <p class="foot">Teams and agencies: per-seat licences with volume pricing. <a href="mailto:hello@splitdock.app">Get in touch.</a></p>
-</div></section>
+  <p class="foot">Teams and agencies, per-seat pricing available. <a href="mailto:hello@splitdock.app">Get in touch.</a></p>
+</section>
 
 <footer><div class="wrap">
-  <div class="meta">Split Dock · GNU GPL v3 · 2026</div>
-  <div class="links">
-    <a href="/splitdock/terms.html">Terms</a>
-    <a href="/splitdock/privacy.html">Privacy</a>
-    <a href="/splitdock/refund.html">Refunds</a>
-    <a href="/splitdock/affiliates.html">Affiliates</a>
-    <a href="/splitdock/blog/">Blog</a>
+  <p>Split Dock draws its own dock using macOS accessibility APIs. It does not modify your browser or its data.</p>
+  <div class="row">
+    <div>Copyright 2026 Split Dock. Released under the GNU GPL v3.</div>
+    <div class="links">
+      <a href="/splitdock/terms.html">Terms</a>
+      <a href="/splitdock/privacy.html">Privacy</a>
+      <a href="/splitdock/refund.html">Refunds</a>
+      <a href="/splitdock/affiliates.html">Affiliates</a>
+    </div>
   </div>
 </div></footer>
 
