@@ -1,0 +1,55 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Split Dock — one Dock icon per Chrome profile</title>
+<meta name="description" content="A Mac Dock that gives every Chrome profile its own icon. Everything else looks exactly like your Mac's Dock.">
+<link rel="stylesheet" href="/splitdock/assets/style.css">
+</head><body>
+<header class="nav"><div class="wrap"><a class="brand" href="/splitdock/">Split Dock</a><nav><a href="/splitdock/#features">Features</a><a href="/splitdock/#pricing">Pricing</a><a href="/splitdock/blog/">Blog</a></nav></div></header>
+<div class="hero"><div class="wrap">
+  <h1>Every Chrome profile,<br>its own Dock icon.</h1>
+  <p class="sub">macOS squeezes all your Chrome profiles into one icon. Split Dock gives each of them its own, with its own avatar. Everything else looks exactly like your Mac's Dock.</p>
+  <a class="btn" href="#pricing">Get Split Dock</a>
+  <p class="pricenote">14-day free trial. No account needed.</p>
+</div></div>
+
+<section id="features"><div class="wrap">
+  <h2>Made for people who live in Chrome profiles</h2>
+  <p class="lead">Work, client, personal. If you run several Chrome identities, the Dock has never helped you switch. Now it does.</p>
+  <div class="grid">
+    <div class="card"><h3>One icon per profile</h3><p>Each profile gets its own Dock tile with its own avatar. See at a glance which is which.</p></div>
+    <div class="card"><h3>No second Chrome</h3><p>Other tools run separate copies of Chrome, costing memory and a re-login each. Split Dock uses your real Chrome. No re-login, ever.</p></div>
+    <div class="card"><h3>Just the profile's windows</h3><p>Right-click or hover a profile tile and you see only that profile's windows. Nothing else.</p></div>
+    <div class="card"><h3>Looks like your Mac</h3><p>Icon size, spacing and sharpness matched to Apple's Dock. Light, dark and accent follow the system.</p></div>
+    <div class="card"><h3>Every display</h3><p>Show the Dock on all your screens, and let running apps appear on the screen their windows are on.</p></div>
+    <div class="card"><h3>Pin, drag, arrange</h3><p>A profile tile pins, unpins and drags exactly like any app icon. You cannot tell it apart from a normal one.</p></div>
+  </div>
+</div></section>
+
+<section id="pricing"><div class="wrap">
+  <h2>Simple pricing</h2>
+  <p class="lead">One price. Your Chrome profiles, sorted. The dock itself is free to try for 14 days.</p>
+  <div class="pricing">
+    <div class="plan featured">
+      <span class="badge">Founding price</span>
+      <div class="price">$19<small> one-time</small></div>
+      <ul><li>Every Chrome profile its own icon</li><li>Use on all your Macs</li><li>One year of updates</li><li>Launch price, going to $29</li></ul>
+      <a class="btn" href="#" data-checkout>Buy Split Dock</a>
+    </div>
+    <div class="plan">
+      <div class="price">$49<small> lifetime</small></div>
+      <ul><li>Everything in the one-time plan</li><li>Every future update, free</li><li>Support the work</li></ul>
+      <a class="btn ghost" href="#" data-checkout>Get lifetime</a>
+    </div>
+  </div>
+  <p class="pricenote" style="text-align:center">Business and team seats available. <a href="mailto:hello@splitdock.app">Get in touch.</a></p>
+</div></section>
+
+<footer><div class="wrap"><div>&copy; 2026 Split Dock. Released under the GNU GPL v3.</div><div><a href="/splitdock/terms.html">Terms</a><a href="/splitdock/privacy.html">Privacy</a><a href="/splitdock/refund.html">Refunds</a><a href="/splitdock/affiliates.html">Affiliates</a></div></div></footer>
+<script>
+// Checkout links are wired to the payment provider (Paddle/Lemon Squeezy) at
+// launch. Until then they point at the trial download.
+document.querySelectorAll('[data-checkout]').forEach(function (a) {
+  a.addEventListener('click', function (e) { e.preventDefault(); window.location = '/splitdock/download.html'; });
+});
+</script>
+</body></html>
