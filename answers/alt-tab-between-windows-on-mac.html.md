@@ -9,14 +9,19 @@ Short answer. Out of the box you cannot: Command-Tab cycles apps and Command-Bac
 ## What macOS gives you
 
 | Shortcut | What it cycles | Thumbnails |
+|---|---|---|
 
 | Command-Tab | Apps, one entry per app | No, icons only |
+|---|---|---|
 
 | Command-Backtick (Command-`) | Windows of the front app | No |
+|---|---|---|
 
 | Mission Control (Control-Up) | Shows everything, no cycling | Yes |
+|---|---|---|
 
 | App Exposé (Control-Down) | Front app's windows spread out | Yes |
+|---|---|---|
 
 ## Getting the Windows behaviour
 

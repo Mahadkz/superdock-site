@@ -13,12 +13,16 @@ The Dock keys a tile to a process, not to a window. Google Chrome opens all your
 ## The three ways to get one icon per profile
 
 | Method | Extra login? | Extra memory? | Extensions and sync | Cost |
+|---|---|---|---|---|
 
 | Superdock (own Dock, one Chrome process) | No | No | Unchanged | $7.99 once after a 14-day trial; the rest of the dock is free |
+|---|---|---|---|---|
 
 | Separate Chrome instances (--user-data-dir, Automator wrapper, Parallel Spaces, chrome-schismator) | Yes, one per instance | Yes, roughly one full Chrome per instance | Set up again per instance | Free to scripted, or a paid wrapper |
+|---|---|---|---|---|
 
 | Chrome's own profile shortcuts | No | No | Unchanged | Free, but not available on macOS: the Dock still merges them |
+|---|---|---|---|---|
 
 ## How Superdock does it
 

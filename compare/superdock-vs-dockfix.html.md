@@ -12,6 +12,7 @@ DockFix is a customisation dock: colours, opacity, custom icons, widgets, a file
 ## Side by side
 
 |  | Superdock | DockFix |
+|---|---|---|
 | Approach | Replaces the Dock with a pixel-matched copy of Apple's | Replaces the Dock, built around appearance |
 | Price | Dock free; Chrome profile icons $7.99 once (up to 5 Macs) | €14.99 once |
 | One Dock icon per Chrome profile | Yes, one icon per profile in one Chrome process | No |

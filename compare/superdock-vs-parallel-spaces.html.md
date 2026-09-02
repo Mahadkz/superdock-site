@@ -12,6 +12,7 @@ Parallel Spaces and Superdock solve the same complaint, one Dock icon for all Ch
 ## Side by side
 
 |  | Superdock | Parallel Spaces |
+|---|---|---|
 | Approach | Replaces the Dock with a pixel-matched copy of Apple's | Creates a separate app per Chrome profile (separate browser instances) |
 | Price | Dock free; Chrome profile icons $7.99 once (up to 5 Macs) | $4.99 once (Mac App Store) |
 | One Dock icon per Chrome profile | Yes, one icon per profile in one Chrome process | Yes, as separate instances: each profile is its own browser with its own login and memory |
@@ -27,6 +28,7 @@ We make Superdock. Facts about Parallel Spaces come from its own website as read
 
 ## Memory and logins
 | Three profiles as | Chrome processes | Logins | Extensions and sync |
+|---|---|---|---|
 | Chrome profiles + Superdock | 1 | Existing | Shared, unchanged |
 | Three separate instances | 3 | 3, one per instance | Set up three times |
 

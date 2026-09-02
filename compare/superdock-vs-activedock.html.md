@@ -12,6 +12,7 @@ ActiveDock is a launcher-flavoured Dock replacement with groups, folders, icon t
 ## Side by side
 
 |  | Superdock | ActiveDock |
+|---|---|---|
 | Approach | Replaces the Dock with a pixel-matched copy of Apple's | Replaces the Dock with a launcher-style dock |
 | Price | Dock free; Chrome profile icons $7.99 once (up to 5 Macs) | Not stated on its site |
 | One Dock icon per Chrome profile | Yes, one icon per profile in one Chrome process | No |

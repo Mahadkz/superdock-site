@@ -12,6 +12,7 @@ uBar is the long-running Windows-taskbar-for-Mac: window buttons, grouping, badg
 ## Side by side
 
 |  | Superdock | uBar |
+|---|---|---|
 | Approach | Replaces the Dock with a pixel-matched copy of Apple's | Replaces the Dock with a Windows-style taskbar (or a dock mode) |
 | Price | Dock free; Chrome profile icons $7.99 once (up to 5 Macs) | $30 Personal (2 Macs), $50 Commercial, one-time |
 | One Dock icon per Chrome profile | Yes, one icon per profile in one Chrome process | No, groups by app |

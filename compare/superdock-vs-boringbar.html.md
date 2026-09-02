@@ -12,6 +12,7 @@ boringBar drew 500 points on Hacker News for a simple taskbar that shows the win
 ## Side by side
 
 |  | Superdock | boringBar |
+|---|---|---|
 | Approach | Replaces the Dock with a pixel-matched copy of Apple's | A taskbar-style bar that lists the windows of the current workspace |
 | Price | Dock free; Chrome profile icons $7.99 once (up to 5 Macs) | Not stated on its site |
 | One Dock icon per Chrome profile | Yes, one icon per profile in one Chrome process | No |

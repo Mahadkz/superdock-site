@@ -12,6 +12,7 @@ DockSpark is the closest neighbour: hover Chrome's Dock icon and a panel lets yo
 ## Side by side
 
 |  | Superdock | DockSpark |
+|---|---|---|
 | Approach | Replaces the Dock with a pixel-matched copy of Apple's | Adds a hover panel to Apple's Dock for switching browser profiles |
 | Price | Dock free; Chrome profile icons $7.99 once (up to 5 Macs) | Free now; planned $1.99 to $3.99 once |
 | One Dock icon per Chrome profile | Yes, one icon per profile in one Chrome process | Switching only: hover the Chrome icon to open a profile; still one Dock icon |

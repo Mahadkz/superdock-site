@@ -12,6 +12,7 @@ ExtraDock adds more docks: floating panels anywhere on any screen with widgets, 
 ## Side by side
 
 |  | Superdock | ExtraDock |
+|---|---|---|
 | Approach | Replaces the Dock with a pixel-matched copy of Apple's | Adds extra floating docks beside Apple's (can also replace it) |
 | Price | Dock free; Chrome profile icons $7.99 once (up to 5 Macs) | $14.99 a year, $27.90 lifetime per device, $69.90 for 5 Macs |
 | One Dock icon per Chrome profile | Yes, one icon per profile in one Chrome process | No |

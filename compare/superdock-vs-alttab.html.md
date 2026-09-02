@@ -12,6 +12,7 @@ AltTab does one thing: a Windows-style switcher that lists every window with a l
 ## Side by side
 
 |  | Superdock | AltTab |
+|---|---|---|
 | Approach | Replaces the Dock with a pixel-matched copy of Apple's | Window switcher only; does not touch the Dock |
 | Price | Dock free; Chrome profile icons $7.99 once (up to 5 Macs) | Free and open source; AltTab Pro adds search, styles and extra shortcuts (price not shown on its site) |
 | One Dock icon per Chrome profile | Yes, one icon per profile in one Chrome process | No |

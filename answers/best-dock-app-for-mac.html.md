@@ -9,18 +9,25 @@ Short answer. There is no single best; it depends on how much of Apple's Dock yo
 ## Pick by what you want changed
 
 | You want | Look at | Why |
+|---|---|---|
 
 | Apple's Dock, plus window previews and Alt-Tab | DockDoor | Adds to the Dock instead of replacing it; free core features |
+|---|---|---|
 
 | A window switcher only | AltTab | Free, open source, one job |
+|---|---|---|
 
 | A Windows-style taskbar with window buttons | uBar, boringBar | Shows windows instead of apps; looks nothing like the Dock |
+|---|---|---|
 
 | Heavy customisation: themes, icons, widgets | DockFix, Sidebar, ActiveDock, ExtraDock | Replacement docks built around appearance |
+|---|---|---|
 
 | Chrome profiles as separate apps | Parallel Spaces, DockSpark, scripts | Separate Chrome instances; separate logins and memory |
+|---|---|---|
 
 | Apple's exact Dock plus one icon per Chrome profile, previews, Alt-Tab, a dock per display | Superdock | The only one that separates profiles inside one Chrome process; dock free, profiles $7.99 once |
+|---|---|---|
 
 ## Questions to ask before choosing
 

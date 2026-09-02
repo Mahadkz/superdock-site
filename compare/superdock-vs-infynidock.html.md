@@ -12,6 +12,7 @@ InfyniDock makes every window a Dock target, with labels and previews, aimed at 
 ## Side by side
 
 |  | Superdock | InfyniDock |
+|---|---|---|
 | Approach | Replaces the Dock with a pixel-matched copy of Apple's | Replaces the Dock with window-level targets |
 | Price | Dock free; Chrome profile icons $7.99 once (up to 5 Macs) | Not stated on its site |
 | One Dock icon per Chrome profile | Yes, one icon per profile in one Chrome process | By window: individual Chrome windows are targets, no profile attribution described |

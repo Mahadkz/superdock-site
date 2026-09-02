@@ -12,6 +12,7 @@ DockDoor is the app most people find first when they want Windows-style hover pr
 ## Side by side
 
 |  | Superdock | DockDoor |
+|---|---|---|
 | Approach | Replaces the Dock with a pixel-matched copy of Apple's | Adds previews and a switcher to Apple's Dock; a separate Pro app replaces the Dock |
 | Price | Dock free; Chrome profile icons $7.99 once (up to 5 Macs) | Free; Pro $20 once for 3 Macs |
 | One Dock icon per Chrome profile | Yes, one icon per profile in one Chrome process | No, profiles stay merged under one Chrome icon |
