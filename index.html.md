@@ -17,7 +17,7 @@ Other tools launch a separate copy of Chrome per profile, costing about 2.8x the
 
 ## Price
 
-$7.99 once (launch price, list $13.99). One licence, up to five Macs, every update included, no subscription. Free 14-day trial, no account, no card. Payment by Paddle. Buy at https://superdock.app/buy.html
+$7.99 once (launch price, list $13.99). One licence, up to five Macs, every update included, no subscription. The dock itself is free to download and stays free; the price is for the Chrome profile icons, after a 14-day trial with no account or card. Payment by Paddle. Buy at https://superdock.app/buy.html
 
 ## Requirements
 

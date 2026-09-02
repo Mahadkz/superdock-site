@@ -6,7 +6,7 @@ Current version: 1.0.1 for macOS 14 or later. Direct download: https://superdock
 
 1. Download and open. Drag Superdock to your Applications folder and launch it.
 2. Grant one permission. Superdock asks for Accessibility once, so it can read your open windows. Nothing else is required to start.
-3. Use it free for 14 days. All features, no account. After the trial the dock keeps working; a licence brings the Chrome profile icons back.
+3. The dock is free. Every feature is on for 14 days, no account. After that the dock keeps working for free; a licence brings the Chrome profile icons back.
 
 ## One licence, five Macs
 
