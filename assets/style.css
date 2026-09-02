@@ -233,3 +233,6 @@ details.qa p { margin: 0 0 18px; }
   .post img.hero { border-radius: 10px; }
   .post table.compare { display: block; overflow-x: auto; }
 }
+
+/* Reserve the video box before the poster arrives: no layout shift */
+.hero .frame video, .media video { aspect-ratio: 16 / 9; width: 100%; height: auto; display: block; }
