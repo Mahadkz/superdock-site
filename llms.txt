@@ -20,6 +20,38 @@ Key facts:
 - [Refund Policy](https://superdock.app/refund.html)
 - [Privacy Policy](https://superdock.app/privacy.html)
 
+## Answers
+
+Direct answers to the questions Mac users ask, two sentences first, then the honest alternatives.
+
+- [How do I Alt-Tab between windows on a Mac like Windows?](https://superdock.app/answers/alt-tab-between-windows-on-mac.html)
+- [What is the best Dock app for Mac in 2026?](https://superdock.app/answers/best-dock-app-for-mac.html)
+- [How do I make Chrome profiles on a Mac work like they do on Windows?](https://superdock.app/answers/chrome-profiles-on-mac-like-windows.html)
+- [Can I click the empty space at the end of the Dock to open Mission Control or Show Desktop?](https://superdock.app/answers/click-empty-dock-space-mission-control-show-desktop.html)
+- [Can the Mac Dock show on both monitors at once?](https://superdock.app/answers/dock-on-both-monitors-mac.html)
+- [Can the Mac Dock show window previews when I hover, like the Windows taskbar?](https://superdock.app/answers/dock-window-previews-on-hover-mac.html)
+- [What is the fastest way to switch between Chrome windows on a Mac?](https://superdock.app/answers/fastest-way-to-switch-between-chrome-windows-mac.html)
+- [Can I have a separate Dock icon for each Chrome profile on a Mac?](https://superdock.app/answers/separate-dock-icon-for-each-chrome-profile-mac.html)
+- [Why does Command-Tab not bring back minimized windows on a Mac?](https://superdock.app/answers/why-cmd-tab-does-not-show-minimized-windows-mac.html)
+- [Why do maximized windows go under the Dock in macOS 26 Tahoe?](https://superdock.app/answers/windows-go-under-dock-macos-tahoe.html)
+
+## Comparisons
+
+Superdock against each other Dock app, using facts from that app's own website, with a "choose them if" section on every page.
+
+- [Superdock vs ActiveDock](https://superdock.app/compare/superdock-vs-activedock.html)
+- [Superdock vs AltTab](https://superdock.app/compare/superdock-vs-alttab.html)
+- [Superdock vs boringBar](https://superdock.app/compare/superdock-vs-boringbar.html)
+- [Superdock vs DockDoor](https://superdock.app/compare/superdock-vs-dockdoor.html)
+- [Superdock vs DockFix](https://superdock.app/compare/superdock-vs-dockfix.html)
+- [Superdock vs DockSpark](https://superdock.app/compare/superdock-vs-dockspark.html)
+- [Superdock vs ExtraDock](https://superdock.app/compare/superdock-vs-extradock.html)
+- [Superdock vs InfyniDock](https://superdock.app/compare/superdock-vs-infynidock.html)
+- [Superdock vs the built-in macOS Dock](https://superdock.app/compare/superdock-vs-macos-dock.html)
+- [Superdock vs Parallel Spaces](https://superdock.app/compare/superdock-vs-parallel-spaces.html)
+- [Superdock vs Sidebar](https://superdock.app/compare/superdock-vs-sidebar.html)
+- [Superdock vs uBar](https://superdock.app/compare/superdock-vs-ubar.html)
+
 ## Guides
 
 - [How to get a separate Dock icon for each Chrome profile on Mac](https://superdock.app/blog/chrome-profile-dock-icons-mac.html)

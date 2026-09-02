@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MPHGSB98');</script>
+<!-- End Google Tag Manager -->
+<title>Window previews on hover in the Mac Dock, like Windows</title>
+<meta name="description" content="Apple&#x27;s Dock shows only the app name on hover. Windows-style thumbnails need a third-party app: DockDoor adds them to Apple&#x27;s Dock, Superdock builds them in.">
+<link rel="canonical" href="https://superdock.app/answers/dock-window-previews-on-hover-mac.html">
+<link rel="describedby" href="https://superdock.app/llms.txt">
+<meta property="og:type" content="article"><meta property="og:url" content="https://superdock.app/answers/dock-window-previews-on-hover-mac.html"><meta property="og:site_name" content="Superdock"><meta property="og:title" content="Window previews on hover in the Mac Dock, like Windows"><meta property="og:description" content="Apple&#x27;s Dock shows only the app name on hover. Windows-style thumbnails need a third-party app: DockDoor adds them to Apple&#x27;s Dock, Superdock builds them in."><meta property="og:image" content="https://superdock.app/assets/icon-1024.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Window previews on hover in the Mac Dock, like Windows"><meta name="twitter:description" content="Apple&#x27;s Dock shows only the app name on hover. Windows-style thumbnails need a third-party app: DockDoor adds them to Apple&#x27;s Dock, Superdock builds them in."><meta name="twitter:image" content="https://superdock.app/assets/icon-1024.png">
+<link rel="icon" href="../assets/mark.png"><link rel="apple-touch-icon" href="../assets/icon-256.png">
+<link rel="preload" href="../assets/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://superdock.app/answers/dock-window-previews-on-hover-mac.html", "url": "https://superdock.app/answers/dock-window-previews-on-hover-mac.html", "name": "Can the Mac Dock show window previews when I hover, like the Windows taskbar?", "description": "Apple's Dock shows only the app name on hover. Windows-style thumbnails need a third-party app: DockDoor adds them to Apple's Dock, Superdock builds them in.", "datePublished": "2026-09-03", "dateModified": "2026-09-03", "isPartOf": {"@id": "https://superdock.app/#site"}, "about": {"@id": "https://superdock.app/#app"}, "author": {"@id": "https://superdock.app/#mahad"}, "publisher": {"@id": "https://superdock.app/#org"}, "primaryImageOfPage": "https://superdock.app/assets/icon-1024.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Superdock", "item": "https://superdock.app/"}, {"@type": "ListItem", "position": 2, "name": "Answers", "item": "https://superdock.app/answers/"}, {"@type": "ListItem", "position": 3, "name": "Can the Mac Dock show window previews when I hover, like the Windows taskbar?", "item": "https://superdock.app/answers/dock-window-previews-on-hover-mac.html"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why do I need Screen Recording?", "acceptedAnswer": {"@type": "Answer", "text": "macOS treats a thumbnail of another app's window as a screen capture. The permission is optional and only unlocks the images."}}, {"@type": "Question", "name": "Do previews work for minimized windows?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Minimized windows are listed and clicking one restores it."}}, {"@type": "Question", "name": "Can I turn previews off?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, from the menu bar menu (Window Previews) or in Settings."}}]}]}</script>
+</head><body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPHGSB98"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="nav"><div class="wrap"><a class="brand" href="/"><img src="../assets/mark.png" alt="">Superdock</a><div class="links"><a href="/answers/">Answers</a><a href="/compare/">Compare</a><a href="/#pricing">Pricing</a><a href="/blog/">Blog</a></div><a class="navcta" href="../Superdock-1.0.1.dmg">Download free</a></div></header>
+<main><article class="wrap doc post">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Superdock</a> / <a href="./">Answers</a></nav>
+<h1>Can the Mac Dock show window previews when I hover, like the Windows taskbar?</h1>
+<p class="byline">By Mahad Kazmi, developer of Superdock. Updated 3 September 2026.</p>
+<div class="answer"><img src="../assets/icon-256.png" width="72" height="72" alt="Superdock icon"><div><p class="short"><strong>Short answer.</strong> Not by itself: hovering a Dock icon shows the app's name and nothing else. Two apps add Windows-style thumbnails. DockDoor overlays previews on Apple's Dock, and Superdock replaces the Dock with one that previews windows natively, filtered to the Chrome profile you are hovering.</p></div></div>
+
+<h2>What a preview should tell you</h2>
+<p>The point of a hover preview is to pick the right window without clicking through. A good one shows every window of that app as a live thumbnail with its title, lets you click a thumbnail to go straight to it, and offers close and minimize without changing focus. For a browser it should also tell you which profile a window belongs to, because five Chrome thumbnails with the same favicon do not.</p>
+<h2>Superdock previews</h2>
+<ol class="steps">
+<li><b>Hover any tile.</b> After a short pause a plate above the dock lists that app's windows as thumbnails with titles.</li>
+<li><b>Hover a Chrome profile tile</b> and you see only that profile's windows.</li>
+<li><b>Click a thumbnail</b> to bring that window forward. On a multi-display setup, each dock previews the windows on its own screen.</li>
+</ol>
+<p>Live thumbnails use Screen Recording, which is optional. Without it, previews show window titles and the app icon.</p>
+<h2>Or add previews to Apple's Dock</h2>
+<p>If you want to keep Apple's Dock exactly as it is, DockDoor adds hover previews and an Alt-Tab switcher on top of it and is free for the core features. What it cannot do is change the Dock's tiles, so Chrome profiles stay merged.</p>
+
+<h2>Frequently asked questions</h2>
+<details class="qa"><summary><h3>Why do I need Screen Recording?</h3></summary><p>macOS treats a thumbnail of another app's window as a screen capture. The permission is optional and only unlocks the images.</p></details><details class="qa"><summary><h3>Do previews work for minimized windows?</h3></summary><p>Yes. Minimized windows are listed and clicking one restores it.</p></details><details class="qa"><summary><h3>Can I turn previews off?</h3></summary><p>Yes, from the menu bar menu (Window Previews) or in Settings.</p></details>
+<div class="cta"><img src="../assets/icon-256.png" width="56" height="56" alt=""><div><p><a class="btn primary" href="../Superdock-1.0.1.dmg">Download free</a> <span class="muted">The dock is free. Chrome profile icons: 14 days free, then $7.99 once. macOS 14 or later.</span></p></div></div>
+<h2>Continue reading</h2>
+<ul class="related"><li><a href="../compare/superdock-vs-dockdoor.html">Superdock vs DockDoor</a></li><li><a href="alt-tab-between-windows-on-mac.html">How do I Alt-Tab between windows on a Mac like Windows?</a></li><li><a href="separate-dock-icon-for-each-chrome-profile-mac.html">Can I have a separate Dock icon for each Chrome profile on a Mac?</a></li></ul>
+</article></main>
+<footer><div class="wrap"><div class="row"><div>Copyright 2026 Superdock. All rights reserved.</div><div class="links"><a href="../about.html">About</a> <a href="../terms.html">Terms</a> <a href="../privacy.html">Privacy</a> <a href="../refund.html">Refunds</a> <a href="../affiliates.html">Affiliates</a></div></div></div></footer>
+</body></html>

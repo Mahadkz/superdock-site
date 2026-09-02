@@ -1,0 +1,58 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MPHGSB98');</script>
+<!-- End Google Tag Manager -->
+<title>Separate Dock icon for each Chrome profile on Mac?</title>
+<meta name="description" content="Yes. Superdock gives every Chrome profile its own Dock icon with its avatar, in one Chrome process. Separate instances work too, at the cost of a second logi.">
+<link rel="canonical" href="https://superdock.app/answers/separate-dock-icon-for-each-chrome-profile-mac.html">
+<link rel="describedby" href="https://superdock.app/llms.txt">
+<meta property="og:type" content="article"><meta property="og:url" content="https://superdock.app/answers/separate-dock-icon-for-each-chrome-profile-mac.html"><meta property="og:site_name" content="Superdock"><meta property="og:title" content="Separate Dock icon for each Chrome profile on Mac?"><meta property="og:description" content="Yes. Superdock gives every Chrome profile its own Dock icon with its avatar, in one Chrome process. Separate instances work too, at the cost of a second logi."><meta property="og:image" content="https://superdock.app/assets/icon-1024.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Separate Dock icon for each Chrome profile on Mac?"><meta name="twitter:description" content="Yes. Superdock gives every Chrome profile its own Dock icon with its avatar, in one Chrome process. Separate instances work too, at the cost of a second logi."><meta name="twitter:image" content="https://superdock.app/assets/icon-1024.png">
+<link rel="icon" href="../assets/mark.png"><link rel="apple-touch-icon" href="../assets/icon-256.png">
+<link rel="preload" href="../assets/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://superdock.app/answers/separate-dock-icon-for-each-chrome-profile-mac.html", "url": "https://superdock.app/answers/separate-dock-icon-for-each-chrome-profile-mac.html", "name": "Can I have a separate Dock icon for each Chrome profile on a Mac?", "description": "Yes. Superdock gives every Chrome profile its own Dock icon with its avatar, in one Chrome process. Separate instances work too, at the cost of a second logi.", "datePublished": "2026-09-03", "dateModified": "2026-09-03", "isPartOf": {"@id": "https://superdock.app/#site"}, "about": {"@id": "https://superdock.app/#app"}, "author": {"@id": "https://superdock.app/#mahad"}, "publisher": {"@id": "https://superdock.app/#org"}, "primaryImageOfPage": "https://superdock.app/assets/icon-1024.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Superdock", "item": "https://superdock.app/"}, {"@type": "ListItem", "position": 2, "name": "Answers", "item": "https://superdock.app/answers/"}, {"@type": "ListItem", "position": 3, "name": "Can I have a separate Dock icon for each Chrome profile on a Mac?", "item": "https://superdock.app/answers/separate-dock-icon-for-each-chrome-profile-mac.html"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does this work with Chrome Beta, Canary, Brave or Edge?", "acceptedAnswer": {"@type": "Answer", "text": "Profile tiles are for Google Chrome. Other Chromium browsers appear as normal app tiles with window previews and the switcher."}}, {"@type": "Question", "name": "Does Superdock change Chrome?", "acceptedAnswer": {"@type": "Answer", "text": "No. It reads window titles through Accessibility and Chrome's own profile list on disk. Nothing is installed into Chrome and no extension is needed."}}, {"@type": "Question", "name": "What happens after the 14-day trial?", "acceptedAnswer": {"@type": "Answer", "text": "The dock keeps working for free. Only the per-profile icons need a licence, $7.99 once for up to five Macs."}}, {"@type": "Question", "name": "Can I pin a profile to the Dock?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A pinned profile behaves like a pinned app: click it to open that profile, and it stays in place when closed."}}]}]}</script>
+</head><body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPHGSB98"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="nav"><div class="wrap"><a class="brand" href="/"><img src="../assets/mark.png" alt="">Superdock</a><div class="links"><a href="/answers/">Answers</a><a href="/compare/">Compare</a><a href="/#pricing">Pricing</a><a href="/blog/">Blog</a></div><a class="navcta" href="../Superdock-1.0.1.dmg">Download free</a></div></header>
+<main><article class="wrap doc post">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Superdock</a> / <a href="./">Answers</a></nav>
+<h1>Can I have a separate Dock icon for each Chrome profile on a Mac?</h1>
+<p class="byline">By Mahad Kazmi, developer of Superdock. Updated 3 September 2026.</p>
+<div class="answer"><img src="../assets/icon-256.png" width="72" height="72" alt="Superdock icon"><div><p class="short"><strong>Short answer.</strong> Yes. macOS shows one Dock icon per running process and every Chrome profile runs inside the same process, so Apple's Dock cannot do it. Superdock draws its own Dock and gives each profile its own icon, with the profile's avatar, its own window list and its own previews, while Chrome keeps running as one app.</p></div></div>
+
+<h2>Why Apple's Dock merges Chrome profiles</h2>
+<p>The Dock keys a tile to a process, not to a window. Google Chrome opens all your profiles, work, personal, client, inside one process, so the Dock sees one app and stacks every window under a single icon. Right-clicking it lists windows by title with no hint of which profile owns them, and clicking it brings forward whichever window was last in front.</p>
+<h2>The three ways to get one icon per profile</h2>
+<table class="compare"><thead><tr><th>Method</th><th>Extra login?</th><th>Extra memory?</th><th>Extensions and sync</th><th>Cost</th></tr></thead><tbody>
+<tr><td><img src="../assets/icon-96.png" width="22" height="22" alt="" style="border-radius:6px;vertical-align:-5px;margin-right:6px">Superdock (own Dock, one Chrome process)</td><td>No</td><td>No</td><td>Unchanged</td><td>$7.99 once after a 14-day trial; the rest of the dock is free</td></tr>
+<tr><td>Separate Chrome instances (<code>--user-data-dir</code>, Automator wrapper, Parallel Spaces, chrome-schismator)</td><td>Yes, one per instance</td><td>Yes, roughly one full Chrome per instance</td><td>Set up again per instance</td><td>Free to scripted, or a paid wrapper</td></tr>
+<tr><td>Chrome's own profile shortcuts</td><td>No</td><td>No</td><td>Unchanged</td><td>Free, but not available on macOS: the Dock still merges them</td></tr>
+</tbody></table>
+<h2>How Superdock does it</h2>
+<ol class="steps">
+<li><b>Download and open Superdock.</b> It replaces the system Dock with one that looks identical, and asks for Accessibility so it can read window titles.</li>
+<li><b>Open a second profile in Chrome.</b> Chrome adds the profile name to every window title. Superdock reads that name, matches it against Chrome's profile list, and adds a tile with that profile's avatar.</li>
+<li><b>Use the tiles like any app.</b> Click to bring that profile's windows forward, right-click for only that profile's windows, hover for previews, drag to pin or reorder.</li>
+</ol>
+<p>Under the hood Chrome is untouched: one process, one set of extensions, one sign-in per profile as before. Superdock attributes windows to profiles by title, which is why two profiles with the same name cannot be told apart and grouping is disabled for them.</p>
+<h2>When a separate instance is the better answer</h2>
+<p>If you need hard isolation, for example a browser that must never share cookies or extensions with your main one, a separate <code>--user-data-dir</code> instance is the right tool and Superdock shows each instance as its own tile too. For the common case, several Google accounts you switch between all day, the profile approach costs nothing extra and keeps sync working.</p>
+
+<h2>Frequently asked questions</h2>
+<details class="qa"><summary><h3>Does this work with Chrome Beta, Canary, Brave or Edge?</h3></summary><p>Profile tiles are for Google Chrome. Other Chromium browsers appear as normal app tiles with window previews and the switcher.</p></details><details class="qa"><summary><h3>Does Superdock change Chrome?</h3></summary><p>No. It reads window titles through Accessibility and Chrome's own profile list on disk. Nothing is installed into Chrome and no extension is needed.</p></details><details class="qa"><summary><h3>What happens after the 14-day trial?</h3></summary><p>The dock keeps working for free. Only the per-profile icons need a licence, $7.99 once for up to five Macs.</p></details><details class="qa"><summary><h3>Can I pin a profile to the Dock?</h3></summary><p>Yes. A pinned profile behaves like a pinned app: click it to open that profile, and it stays in place when closed.</p></details>
+<div class="cta"><img src="../assets/icon-256.png" width="56" height="56" alt=""><div><p><a class="btn primary" href="../Superdock-1.0.1.dmg">Download free</a> <span class="muted">The dock is free. Chrome profile icons: 14 days free, then $7.99 once. macOS 14 or later.</span></p></div></div>
+<h2>Continue reading</h2>
+<ul class="related"><li><a href="../blog/chrome-profile-dock-icons-mac.html">Step-by-step: a separate Dock icon for each Chrome profile</a></li><li><a href="../blog/chrome-profiles-vs-separate-instances.html">Chrome profiles vs separate instances: memory, logins and Dock icons</a></li><li><a href="../compare/superdock-vs-parallel-spaces.html">Superdock vs Parallel Spaces</a></li></ul>
+</article></main>
+<footer><div class="wrap"><div class="row"><div>Copyright 2026 Superdock. All rights reserved.</div><div class="links"><a href="../about.html">About</a> <a href="../terms.html">Terms</a> <a href="../privacy.html">Privacy</a> <a href="../refund.html">Refunds</a> <a href="../affiliates.html">Affiliates</a></div></div></div></footer>
+</body></html>

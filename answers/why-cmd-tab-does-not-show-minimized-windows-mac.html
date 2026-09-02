@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MPHGSB98');</script>
+<!-- End Google Tag Manager -->
+<title>Why Command-Tab does not bring back minimized windows</title>
+<meta name="description" content="Command-Tab switches to an app, and a minimized window stays in the Dock. The Option trick restores one window; a window switcher lists them all.">
+<link rel="canonical" href="https://superdock.app/answers/why-cmd-tab-does-not-show-minimized-windows-mac.html">
+<link rel="describedby" href="https://superdock.app/llms.txt">
+<meta property="og:type" content="article"><meta property="og:url" content="https://superdock.app/answers/why-cmd-tab-does-not-show-minimized-windows-mac.html"><meta property="og:site_name" content="Superdock"><meta property="og:title" content="Why Command-Tab does not bring back minimized windows"><meta property="og:description" content="Command-Tab switches to an app, and a minimized window stays in the Dock. The Option trick restores one window; a window switcher lists them all."><meta property="og:image" content="https://superdock.app/assets/icon-1024.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Why Command-Tab does not bring back minimized windows"><meta name="twitter:description" content="Command-Tab switches to an app, and a minimized window stays in the Dock. The Option trick restores one window; a window switcher lists them all."><meta name="twitter:image" content="https://superdock.app/assets/icon-1024.png">
+<link rel="icon" href="../assets/mark.png"><link rel="apple-touch-icon" href="../assets/icon-256.png">
+<link rel="preload" href="../assets/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://superdock.app/answers/why-cmd-tab-does-not-show-minimized-windows-mac.html", "url": "https://superdock.app/answers/why-cmd-tab-does-not-show-minimized-windows-mac.html", "name": "Why does Command-Tab not bring back minimized windows on a Mac?", "description": "Command-Tab switches to an app, and a minimized window stays in the Dock. The Option trick restores one window; a window switcher lists them all.", "datePublished": "2026-09-03", "dateModified": "2026-09-03", "isPartOf": {"@id": "https://superdock.app/#site"}, "about": {"@id": "https://superdock.app/#app"}, "author": {"@id": "https://superdock.app/#mahad"}, "publisher": {"@id": "https://superdock.app/#org"}, "primaryImageOfPage": "https://superdock.app/assets/icon-1024.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Superdock", "item": "https://superdock.app/"}, {"@type": "ListItem", "position": 2, "name": "Answers", "item": "https://superdock.app/answers/"}, {"@type": "ListItem", "position": 3, "name": "Why does Command-Tab not bring back minimized windows on a Mac?", "item": "https://superdock.app/answers/why-cmd-tab-does-not-show-minimized-windows-mac.html"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does Superdock change the Command-Tab shortcut?", "acceptedAnswer": {"@type": "Answer", "text": "Only if you ask it to. By default its switcher is on Option-Tab and Apple's app switcher stays as it is."}}, {"@type": "Question", "name": "Are minimized windows shown in previews?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, and clicking one restores it."}}]}]}</script>
+</head><body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPHGSB98"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="nav"><div class="wrap"><a class="brand" href="/"><img src="../assets/mark.png" alt="">Superdock</a><div class="links"><a href="/answers/">Answers</a><a href="/compare/">Compare</a><a href="/#pricing">Pricing</a><a href="/blog/">Blog</a></div><a class="navcta" href="../Superdock-1.0.1.dmg">Download free</a></div></header>
+<main><article class="wrap doc post">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Superdock</a> / <a href="./">Answers</a></nav>
+<h1>Why does Command-Tab not bring back minimized windows on a Mac?</h1>
+<p class="byline">By Mahad Kazmi, developer of Superdock. Updated 3 September 2026.</p>
+<div class="answer"><img src="../assets/icon-256.png" width="72" height="72" alt="Superdock icon"><div><p class="short"><strong>Short answer.</strong> Because Command-Tab activates an app, not a window, and macOS considers a minimized window to be parked in the Dock rather than part of the app's visible set. Holding Option while releasing Command restores one minimized window; a window switcher such as Superdock's lists every window, minimized ones included, so you pick the one you want.</p></div></div>
+
+<h2>The Option trick</h2>
+<p>Press Command-Tab, keep Command held, move to the app, then hold Option before you let go of Command. macOS un-minimizes one window of that app. It works for a single window and is easy to fumble, which is why most people never rely on it.</p>
+<h2>A switcher that treats minimized windows as windows</h2>
+<p>Superdock's window switcher shows minimized windows dimmed in the same list as everything else, most recent first. Selecting one restores it and brings it forward. Hover previews in the dock list them too, so a minimized Chrome window is one click away from its profile tile.</p>
+<h2>Apple's own way around it</h2>
+<p>In Settings, Desktop &amp; Dock, turning on "Minimize windows into application icon" keeps minimized windows under the app tile instead of the right end of the Dock, which makes them easier to find by right-clicking the app. It does not change Command-Tab.</p>
+
+<h2>Frequently asked questions</h2>
+<details class="qa"><summary><h3>Does Superdock change the Command-Tab shortcut?</h3></summary><p>Only if you ask it to. By default its switcher is on Option-Tab and Apple's app switcher stays as it is.</p></details><details class="qa"><summary><h3>Are minimized windows shown in previews?</h3></summary><p>Yes, and clicking one restores it.</p></details>
+<div class="cta"><img src="../assets/icon-256.png" width="56" height="56" alt=""><div><p><a class="btn primary" href="../Superdock-1.0.1.dmg">Download free</a> <span class="muted">The dock is free. Chrome profile icons: 14 days free, then $7.99 once. macOS 14 or later.</span></p></div></div>
+<h2>Continue reading</h2>
+<ul class="related"><li><a href="alt-tab-between-windows-on-mac.html">How do I Alt-Tab between windows on a Mac like Windows?</a></li><li><a href="../blog/alt-tab-on-mac.html">Alt-Tab on Mac: how to switch between windows like Windows</a></li></ul>
+</article></main>
+<footer><div class="wrap"><div class="row"><div>Copyright 2026 Superdock. All rights reserved.</div><div class="links"><a href="../about.html">About</a> <a href="../terms.html">Terms</a> <a href="../privacy.html">Privacy</a> <a href="../refund.html">Refunds</a> <a href="../affiliates.html">Affiliates</a></div></div></div></footer>
+</body></html>

@@ -1,0 +1,52 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MPHGSB98');</script>
+<!-- End Google Tag Manager -->
+<title>Make Chrome profiles on a Mac work like they do on Windows</title>
+<meta name="description" content="On Windows each Chrome profile gets its own taskbar button. On a Mac they merge into one Dock icon. Why, and how Superdock brings the Windows behaviour back.">
+<link rel="canonical" href="https://superdock.app/answers/chrome-profiles-on-mac-like-windows.html">
+<link rel="describedby" href="https://superdock.app/llms.txt">
+<meta property="og:type" content="article"><meta property="og:url" content="https://superdock.app/answers/chrome-profiles-on-mac-like-windows.html"><meta property="og:site_name" content="Superdock"><meta property="og:title" content="Make Chrome profiles on a Mac work like they do on Windows"><meta property="og:description" content="On Windows each Chrome profile gets its own taskbar button. On a Mac they merge into one Dock icon. Why, and how Superdock brings the Windows behaviour back."><meta property="og:image" content="https://superdock.app/assets/icon-1024.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Make Chrome profiles on a Mac work like they do on Windows"><meta name="twitter:description" content="On Windows each Chrome profile gets its own taskbar button. On a Mac they merge into one Dock icon. Why, and how Superdock brings the Windows behaviour back."><meta name="twitter:image" content="https://superdock.app/assets/icon-1024.png">
+<link rel="icon" href="../assets/mark.png"><link rel="apple-touch-icon" href="../assets/icon-256.png">
+<link rel="preload" href="../assets/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://superdock.app/answers/chrome-profiles-on-mac-like-windows.html", "url": "https://superdock.app/answers/chrome-profiles-on-mac-like-windows.html", "name": "How do I make Chrome profiles on a Mac work like they do on Windows?", "description": "On Windows each Chrome profile gets its own taskbar button. On a Mac they merge into one Dock icon. Why, and how Superdock brings the Windows behaviour back.", "datePublished": "2026-09-03", "dateModified": "2026-09-03", "isPartOf": {"@id": "https://superdock.app/#site"}, "about": {"@id": "https://superdock.app/#app"}, "author": {"@id": "https://superdock.app/#mahad"}, "publisher": {"@id": "https://superdock.app/#org"}, "primaryImageOfPage": "https://superdock.app/assets/icon-1024.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Superdock", "item": "https://superdock.app/"}, {"@type": "ListItem", "position": 2, "name": "Answers", "item": "https://superdock.app/answers/"}, {"@type": "ListItem", "position": 3, "name": "How do I make Chrome profiles on a Mac work like they do on Windows?", "item": "https://superdock.app/answers/chrome-profiles-on-mac-like-windows.html"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does Alt-Tab work like Windows too?", "acceptedAnswer": {"@type": "Answer", "text": "Superdock includes a window switcher that lists every window with a thumbnail, most recent first, on Option-Tab or Command-Tab. Chrome windows are labelled by profile."}}, {"@type": "Question", "name": "Can I have the Dock on both monitors, like the Windows taskbar?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Choose All displays in Settings and each screen gets its own dock; optionally each dock shows only the apps with windows on that screen."}}, {"@type": "Question", "name": "Does it look like the Windows taskbar?", "acceptedAnswer": {"@type": "Answer", "text": "No. It looks exactly like Apple's Dock, measured pixel for pixel against the real one. Only the behaviour is borrowed."}}]}]}</script>
+</head><body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPHGSB98"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="nav"><div class="wrap"><a class="brand" href="/"><img src="../assets/mark.png" alt="">Superdock</a><div class="links"><a href="/answers/">Answers</a><a href="/compare/">Compare</a><a href="/#pricing">Pricing</a><a href="/blog/">Blog</a></div><a class="navcta" href="../Superdock-1.0.1.dmg">Download free</a></div></header>
+<main><article class="wrap doc post">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Superdock</a> / <a href="./">Answers</a></nav>
+<h1>How do I make Chrome profiles on a Mac work like they do on Windows?</h1>
+<p class="byline">By Mahad Kazmi, developer of Superdock. Updated 3 September 2026.</p>
+<div class="answer"><img src="../assets/icon-256.png" width="72" height="72" alt="Superdock icon"><div><p class="short"><strong>Short answer.</strong> On Windows, Chrome registers each profile as its own taskbar entry, so a pinned Chrome becomes the first profile you open and further profiles appear beside it. macOS has no equivalent, so the Dock shows one Chrome. Superdock reproduces the Windows model exactly: the pinned Chrome slot becomes the first profile opened, other profiles appear next to it, and each can be pinned, unpinned and dragged.</p></div></div>
+
+<h2>What Windows does that macOS does not</h2>
+<p>Windows lets an application tag each window with an AppUserModelID. Chrome uses one per profile, so the taskbar groups windows by profile, shows the profile avatar on the icon, and lets you pin a profile as a first-class shortcut. The macOS Dock has no such hook: it groups by process, full stop. Google could not add per-profile Dock icons even if it wanted to, which is why the Chrome team has never shipped them on Mac.</p>
+<h2>The taskbar rule, implemented in a Mac Dock</h2>
+<ul>
+<li><b>Pinned Chrome becomes the first profile you open.</b> Its avatar appears on the tile and a dot marks it running.</li>
+<li><b>Further profiles appear as their own running tiles</b> beside it, each with its own avatar, right-click window list and hover previews.</li>
+<li><b>Pin any profile</b> and it becomes a permanent shortcut that opens that profile directly.</li>
+<li><b>Drag to reorder</b>, drag off the dock to unpin, exactly as on Windows.</li>
+</ul>
+<h2>Why not just run several copies of Chrome?</h2>
+<p>That is what every Windows-style workaround on the Mac does, and it is why they feel wrong: each copy is a separate browser with its own login, extensions, passwords and memory. Windows never asked you to do that, and Superdock does not either. Chrome stays one app; only the Dock changes.</p>
+
+<h2>Frequently asked questions</h2>
+<details class="qa"><summary><h3>Does Alt-Tab work like Windows too?</h3></summary><p>Superdock includes a window switcher that lists every window with a thumbnail, most recent first, on Option-Tab or Command-Tab. Chrome windows are labelled by profile.</p></details><details class="qa"><summary><h3>Can I have the Dock on both monitors, like the Windows taskbar?</h3></summary><p>Yes. Choose All displays in Settings and each screen gets its own dock; optionally each dock shows only the apps with windows on that screen.</p></details><details class="qa"><summary><h3>Does it look like the Windows taskbar?</h3></summary><p>No. It looks exactly like Apple's Dock, measured pixel for pixel against the real one. Only the behaviour is borrowed.</p></details>
+<div class="cta"><img src="../assets/icon-256.png" width="56" height="56" alt=""><div><p><a class="btn primary" href="../Superdock-1.0.1.dmg">Download free</a> <span class="muted">The dock is free. Chrome profile icons: 14 days free, then $7.99 once. macOS 14 or later.</span></p></div></div>
+<h2>Continue reading</h2>
+<ul class="related"><li><a href="separate-dock-icon-for-each-chrome-profile-mac.html">Can I have a separate Dock icon for each Chrome profile on a Mac?</a></li><li><a href="alt-tab-between-windows-on-mac.html">How do I Alt-Tab between windows on a Mac like Windows?</a></li><li><a href="../blog/why-superdock.html">Why one Dock icon per Chrome profile</a></li></ul>
+</article></main>
+<footer><div class="wrap"><div class="row"><div>Copyright 2026 Superdock. All rights reserved.</div><div class="links"><a href="../about.html">About</a> <a href="../terms.html">Terms</a> <a href="../privacy.html">Privacy</a> <a href="../refund.html">Refunds</a> <a href="../affiliates.html">Affiliates</a></div></div></div></footer>
+</body></html>

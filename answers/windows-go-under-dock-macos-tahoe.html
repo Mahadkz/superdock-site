@@ -1,0 +1,51 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MPHGSB98');</script>
+<!-- End Google Tag Manager -->
+<title>Why maximized windows go under the Dock in macOS 26</title>
+<meta name="description" content="macOS Tahoe&#x27;s floating Liquid Glass Dock stopped reserving screen space, so zoomed windows extend beneath it. What changed and how to keep windows above it.">
+<link rel="canonical" href="https://superdock.app/answers/windows-go-under-dock-macos-tahoe.html">
+<link rel="describedby" href="https://superdock.app/llms.txt">
+<meta property="og:type" content="article"><meta property="og:url" content="https://superdock.app/answers/windows-go-under-dock-macos-tahoe.html"><meta property="og:site_name" content="Superdock"><meta property="og:title" content="Why maximized windows go under the Dock in macOS 26"><meta property="og:description" content="macOS Tahoe&#x27;s floating Liquid Glass Dock stopped reserving screen space, so zoomed windows extend beneath it. What changed and how to keep windows above it."><meta property="og:image" content="https://superdock.app/assets/icon-1024.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Why maximized windows go under the Dock in macOS 26"><meta name="twitter:description" content="macOS Tahoe&#x27;s floating Liquid Glass Dock stopped reserving screen space, so zoomed windows extend beneath it. What changed and how to keep windows above it."><meta name="twitter:image" content="https://superdock.app/assets/icon-1024.png">
+<link rel="icon" href="../assets/mark.png"><link rel="apple-touch-icon" href="../assets/icon-256.png">
+<link rel="preload" href="../assets/fonts/Inter-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://superdock.app/answers/windows-go-under-dock-macos-tahoe.html", "url": "https://superdock.app/answers/windows-go-under-dock-macos-tahoe.html", "name": "Why do maximized windows go under the Dock in macOS 26 Tahoe?", "description": "macOS Tahoe's floating Liquid Glass Dock stopped reserving screen space, so zoomed windows extend beneath it. What changed and how to keep windows above it.", "datePublished": "2026-09-03", "dateModified": "2026-09-03", "isPartOf": {"@id": "https://superdock.app/#site"}, "about": {"@id": "https://superdock.app/#app"}, "author": {"@id": "https://superdock.app/#mahad"}, "publisher": {"@id": "https://superdock.app/#org"}, "primaryImageOfPage": "https://superdock.app/assets/icon-1024.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Superdock", "item": "https://superdock.app/"}, {"@type": "ListItem", "position": 2, "name": "Answers", "item": "https://superdock.app/answers/"}, {"@type": "ListItem", "position": 3, "name": "Why do maximized windows go under the Dock in macOS 26 Tahoe?", "item": "https://superdock.app/answers/windows-go-under-dock-macos-tahoe.html"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does this apply to full-screen apps?", "acceptedAnswer": {"@type": "Answer", "text": "No. Full-screen apps take the whole display and hide the Dock; the problem is only with zoomed and tiled windows on the desktop."}}, {"@type": "Question", "name": "Does Superdock look like the Tahoe Dock?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is measured against Apple's Dock on macOS 26: same tile pitch, icon size, glass height and floating gap, and it follows the Default, Dark, Clear and Tinted icon styles."}}, {"@type": "Question", "name": "Can I keep Apple's Dock and just fix the overlap?", "acceptedAnswer": {"@type": "Answer", "text": "No. The reservation only works for the dock Superdock draws, because Apple's Dock no longer publishes its frame to other apps."}}]}]}</script>
+</head><body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPHGSB98"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="nav"><div class="wrap"><a class="brand" href="/"><img src="../assets/mark.png" alt="">Superdock</a><div class="links"><a href="/answers/">Answers</a><a href="/compare/">Compare</a><a href="/#pricing">Pricing</a><a href="/blog/">Blog</a></div><a class="navcta" href="../Superdock-1.0.1.dmg">Download free</a></div></header>
+<main><article class="wrap doc post">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Superdock</a> / <a href="./">Answers</a></nav>
+<h1>Why do maximized windows go under the Dock in macOS 26 Tahoe?</h1>
+<p class="byline">By Mahad Kazmi, developer of Superdock. Updated 3 September 2026.</p>
+<div class="answer"><img src="../assets/icon-256.png" width="72" height="72" alt="Superdock icon"><div><p class="short"><strong>Short answer.</strong> Because the Tahoe Dock floats as a Liquid Glass panel and no longer claims a strip of the screen, so a window zoomed to full height now extends behind it. Apple offers no toggle. Superdock reserves the strip again: windows that would sit under the dock are kept above it, on every display.</p></div></div>
+
+<h2>What changed in Tahoe</h2>
+<p>Up to macOS 15 the Dock told the window server how much of the screen it occupied, and windows zoomed to the remaining "visible frame". In macOS 26 the redesigned Dock floats over the desktop with rounded glass and a gap beneath it, and that reservation went away. Zoom, tiling and many window managers now use the full screen height, so the bottom of the window, often a status bar or the last row of a spreadsheet, disappears behind the Dock. On external displays some people also see phantom Dock space reserved on the wrong screen.</p>
+<h2>Fixes that do not work</h2>
+<ul>
+<li><b>Auto-hide</b> fixes overlap by removing the Dock, which is the thing you wanted to keep.</li>
+<li><b>Making the Dock smaller</b> shrinks the overlap but never removes it.</li>
+<li><b>Terminal defaults</b> such as <code>autohide-delay</code> only change timing.</li>
+</ul>
+<h2>How Superdock handles it</h2>
+<p>Superdock knows the exact frame of its own dock on each display. When a window is zoomed or resized so that it would overlap the dock strip, Superdock moves its bottom edge up to sit above the dock. You can instead have the dock hide while a window is maximized, in Settings, Behavior.</p>
+
+<h2>Frequently asked questions</h2>
+<details class="qa"><summary><h3>Does this apply to full-screen apps?</h3></summary><p>No. Full-screen apps take the whole display and hide the Dock; the problem is only with zoomed and tiled windows on the desktop.</p></details><details class="qa"><summary><h3>Does Superdock look like the Tahoe Dock?</h3></summary><p>Yes. It is measured against Apple's Dock on macOS 26: same tile pitch, icon size, glass height and floating gap, and it follows the Default, Dark, Clear and Tinted icon styles.</p></details><details class="qa"><summary><h3>Can I keep Apple's Dock and just fix the overlap?</h3></summary><p>No. The reservation only works for the dock Superdock draws, because Apple's Dock no longer publishes its frame to other apps.</p></details>
+<div class="cta"><img src="../assets/icon-256.png" width="56" height="56" alt=""><div><p><a class="btn primary" href="../Superdock-1.0.1.dmg">Download free</a> <span class="muted">The dock is free. Chrome profile icons: 14 days free, then $7.99 once. macOS 14 or later.</span></p></div></div>
+<h2>Continue reading</h2>
+<ul class="related"><li><a href="dock-on-both-monitors-mac.html">Can the Mac Dock show on both monitors at once?</a></li><li><a href="../blog/mac-dock-replacements-2026.html">Mac Dock replacements in 2026</a></li><li><a href="../compare/superdock-vs-macos-dock.html">Superdock vs the built-in macOS Dock</a></li></ul>
+</article></main>
+<footer><div class="wrap"><div class="row"><div>Copyright 2026 Superdock. All rights reserved.</div><div class="links"><a href="../about.html">About</a> <a href="../terms.html">Terms</a> <a href="../privacy.html">Privacy</a> <a href="../refund.html">Refunds</a> <a href="../affiliates.html">Affiliates</a></div></div></div></footer>
+</body></html>
