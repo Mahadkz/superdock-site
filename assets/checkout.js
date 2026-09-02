@@ -11,6 +11,11 @@
     if (PADDLE_ENV === "sandbox") Paddle.Environment.set(PADDLE_ENV);
     Paddle.Initialize({ token: PADDLE_TOKEN });
 
+    // buy.html (the app's Buy button lands here): open the checkout at once.
+    if (document.body && document.body.hasAttribute("data-auto-checkout")) {
+      Paddle.Checkout.open({ items: [{ priceId: PRICE_ID, quantity: 1 }], discountId: DISCOUNT_ID });
+    }
+
     document.querySelectorAll("[data-checkout]").forEach(function (el) {
       el.addEventListener("click", function (e) {
         e.preventDefault();
