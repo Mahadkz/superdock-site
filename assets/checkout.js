@@ -15,7 +15,7 @@
       el.addEventListener("click", function (e) {
         e.preventDefault();
         // If the token hasn't been filled in yet, fall back to the download page.
-        if (PADDLE_TOKEN.indexOf("REPLACE") !== -1) { window.location = "/superdock-site/download.html"; return; }
+        if (PADDLE_TOKEN.indexOf("REPLACE") !== -1) { window.location = "download.html"; return; }
         Paddle.Checkout.open({ items: [{ priceId: PRICE_ID, quantity: 1 }], discountId: DISCOUNT_ID });
       });
     });
