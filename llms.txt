@@ -30,5 +30,7 @@ Key facts:
 
 ## Optional
 
+- [About Superdock](https://superdock.app/about.html): who makes it, how it is built, contact
+
 - [Why one Dock icon per Chrome profile](https://superdock.app/blog/why-superdock.html): the reasoning behind the product
 - [Manage your licence](https://superdock.app/manage.html): see and remove the Macs on a licence
