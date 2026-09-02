@@ -1,12 +1,15 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Why one Dock icon per Chrome profile — Superdock</title>
+<meta name="description" content="Why macOS merges every Chrome profile into one Dock icon, why separate Chrome copies are the wrong fix, and how Superdock separates profiles without touching Chrome.">
+<link rel="canonical" href="https://superdock.app/blog/why-superdock.html">
 <link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Superdock", "item": "https://superdock.app/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://superdock.app/blog/"}, {"@type": "ListItem", "position": 3, "name": "Why one Dock icon per Chrome profile", "item": "https://superdock.app/blog/why-superdock.html"}]}, {"@type": "Article", "headline": "Why one Dock icon per Chrome profile", "description": "Why macOS merges every Chrome profile into one Dock icon, why separate Chrome copies are the wrong fix, and how Superdock separates profiles without touching Chrome.", "url": "https://superdock.app/blog/why-superdock.html", "datePublished": "2026-08-27", "dateModified": "2026-09-03", "author": {"@type": "Person", "name": "Mahad Kazmi", "jobTitle": "Developer of Superdock"}, "publisher": {"@type": "Organization", "name": "Superdock", "url": "https://superdock.app/", "logo": {"@type": "ImageObject", "url": "https://superdock.app/assets/mark.png"}}}]}</script>
 </head><body>
 <header class="nav"><div class="wrap"><a class="brand" href="/"><img src="../assets/mark.png" alt="">Superdock</a><div class="links"><a href="/#profiles">Profiles</a><a href="/#previews">Previews</a><a href="/#overview">Overview</a><a href="">Blog</a><a class="buy" href="/#pricing">Buy</a></div></div></header>
 <div class="wrap doc">
 <h1>Why one Dock icon per Chrome profile</h1>
-<p class="muted">27 August 2026</p>
+<p class="byline">By Mahad Kazmi, developer of Superdock. 27 August 2026, updated 3 September 2026.</p>
 <p>If you run more than one Chrome profile, you already know the problem. Work in one, a client in another, personal in a third, and macOS shows you a single Chrome icon in the Dock for all of them. Click it and you get a pile of windows with no way to tell which profile each belongs to.</p>
 <p>This happens because macOS gives one Dock icon per running program, and every Chrome profile runs inside the same Chrome program. The Dock has no idea profiles exist.</p>
 <h2>Why the usual fixes are worse</h2>
@@ -14,7 +17,9 @@
 <p>Superdock takes a different path. It draws its own Dock, so it can show one tile per profile, each with that profile's own picture, while still using your single real Chrome. No second copy, no logging in again.</p>
 <h2>Everything else stays familiar</h2>
 <p>The goal was never to replace your Dock with something that feels foreign. Icon size, spacing and the way it looks were all measured against the real macOS Dock and matched. A profile tile pins, drags and behaves like any other icon. The only difference you notice is that your profiles finally have their own icons.</p>
-<p><a class="btn" href="/#pricing">Try Superdock</a></p>
+<p><a class="btn primary" href="../Superdock-1.0.1.dmg">Download Superdock for Mac</a></p>
+<h2>Continue reading</h2>
+<ul class="related"><li><a href="chrome-profile-dock-icons-mac.html">How to get a separate Dock icon for each Chrome profile on Mac</a></li><li><a href="chrome-profiles-vs-separate-instances.html">Chrome profiles vs separate Chrome instances on Mac</a></li></ul>
 </div>
 <footer><div class="wrap"><div class="row"><div>Copyright 2026 Superdock. All rights reserved.</div><div class="links"><a href="../terms.html">Terms</a><a href="../privacy.html">Privacy</a><a href="../refund.html">Refunds</a><a href="../affiliates.html">Affiliates</a></div></div></div></footer>
 </body></html>
