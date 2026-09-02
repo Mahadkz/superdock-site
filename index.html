@@ -1,16 +1,71 @@
 <!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Superdock</title>
-<meta name="description" content="A Mac Dock that gives every browser profile its own icon. Everything else looks exactly like your Mac.">
-<meta property="og:title" content="Superdock">
-<meta property="og:description" content="One Dock icon per browser profile.">
-<meta property="og:image" content="assets/video/profiles-poster.jpg">
+<title>Superdock: one Dock icon per Chrome profile on your Mac</title>
+<meta name="description" content="Superdock is a Mac Dock replacement that gives every Chrome profile its own Dock icon, with window previews, an Alt-Tab window switcher and a dock on every display. Free 14-day trial, $7.99 once.">
+<link rel="canonical" href="https://superdock.app/">
+<link rel="alternate" type="text/markdown" href="https://superdock.app/index.html.md">
+<link rel="describedby" href="https://superdock.app/llms.txt">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://superdock.app/">
+<meta property="og:site_name" content="Superdock">
+<meta property="og:title" content="Superdock: one Dock icon per Chrome profile">
+<meta property="og:description" content="A Mac Dock replacement that gives every Chrome profile its own icon. Free 14-day trial, $7.99 once.">
+<meta property="og:image" content="https://superdock.app/assets/video/profiles-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Superdock: one Dock icon per Chrome profile">
+<meta name="twitter:description" content="A Mac Dock replacement that gives every Chrome profile its own icon. Free 14-day trial, $7.99 once.">
+<meta name="twitter:image" content="https://superdock.app/assets/video/profiles-poster.jpg">
 <link rel="icon" href="assets/mark.png">
 <link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://superdock.app/#org",
+      "name": "Superdock",
+      "url": "https://superdock.app/",
+      "logo": "https://superdock.app/assets/mark.png",
+      "email": "hello@superdock.app"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://superdock.app/#site",
+      "url": "https://superdock.app/",
+      "name": "Superdock",
+      "publisher": {"@id": "https://superdock.app/#org"}
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://superdock.app/#app",
+      "name": "Superdock",
+      "description": "A macOS Dock replacement that gives every Chrome profile its own Dock icon, with window previews, an Alt-Tab window switcher, a dock on every display and Apple-identical styling.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "macOS 14 or later",
+      "softwareVersion": "1.0.1",
+      "datePublished": "2026-09-02",
+      "dateModified": "2026-09-03",
+      "downloadUrl": "https://superdock.app/Superdock-1.0.1.dmg",
+      "installUrl": "https://superdock.app/download.html",
+      "screenshot": "https://superdock.app/assets/video/profiles-poster.jpg",
+      "publisher": {"@id": "https://superdock.app/#org"},
+      "offers": {
+        "@type": "Offer",
+        "price": "7.99",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://superdock.app/buy.html",
+        "description": "One purchase, up to five Macs, every update included. Free 14-day trial."
+      }
+    }
+  ]
+}
+</script>
 </head><body>
 
 <header class="nav"><div class="wrap">
-  <a class="brand" href="index.html"><img src="assets/mark.png" alt="">Superdock</a>
+  <a class="brand" href="/"><img src="assets/mark.png" alt="">Superdock</a>
   <nav class="links">
     <a href="#previews">Previews</a>
     <a href="#overview">Overview</a>
@@ -21,18 +76,19 @@
   <a class="navcta" href="Superdock-1.0.1.dmg">Download for Mac</a>
 </div></header>
 
+<main>
 <section class="hero">
   <div class="inner">
     <span class="pill"><b>14 days free</b> · no account · macOS 14+</span>
     <h1>One Dock icon<br>per browser profile.</h1>
-    <p class="sub">Your Mac folds every Chrome profile into one icon. Superdock gives each its own, and leaves the rest of your Mac exactly as it is.</p>
+    <p class="sub">Superdock is a Mac Dock replacement that gives every Chrome profile its own Dock icon. macOS folds all your profiles into one; Superdock separates them, and leaves the rest of your Mac exactly as it is.</p>
     <div class="actions">
       <a class="btn primary" href="Superdock-1.0.1.dmg">Download for Mac</a>
       <a class="btn text" href="#profiles">Watch it work</a>
     </div>
   </div>
   <div class="frame">
-    <video autoplay muted loop playsinline poster="assets/video/profiles-poster.jpg">
+    <video autoplay muted loop playsinline aria-hidden="true" tabindex="-1" poster="assets/video/profiles-poster.jpg">
       <source src="assets/video/profiles.webm" type="video/webm">
       <source src="assets/video/profiles.mp4" type="video/mp4">
     </video>
@@ -51,7 +107,7 @@
     </div>
   </div>
   <div class="media">
-    <video autoplay muted loop playsinline poster="assets/video/previews-poster.jpg">
+    <video autoplay muted loop playsinline aria-hidden="true" tabindex="-1" poster="assets/video/previews-poster.jpg">
       <source src="assets/video/previews.webm" type="video/webm">
       <source src="assets/video/previews.mp4" type="video/mp4">
     </video>
@@ -65,7 +121,7 @@
     <p>Click the empty edge of the dock and everything you have open fans out at once. Find the one you want, and go.</p>
   </div>
   <div class="media">
-    <video autoplay muted loop playsinline poster="assets/video/overview-poster.jpg">
+    <video autoplay muted loop playsinline aria-hidden="true" tabindex="-1" poster="assets/video/overview-poster.jpg">
       <source src="assets/video/overview.webm" type="video/webm">
       <source src="assets/video/overview.mp4" type="video/mp4">
     </video>
@@ -79,7 +135,7 @@
     <p>Two screens, or three. Each app shows on the display its windows live on, so the dock always matches what is actually in front of you.</p>
   </div>
   <div class="media">
-    <video autoplay muted loop playsinline poster="assets/video/displays-poster.jpg">
+    <video autoplay muted loop playsinline aria-hidden="true" tabindex="-1" poster="assets/video/displays-poster.jpg">
       <source src="assets/video/displays.webm" type="video/webm">
       <source src="assets/video/displays.mp4" type="video/mp4">
     </video>
@@ -112,14 +168,36 @@
   <p class="foot">Teams and agencies, volume pricing available. <a href="mailto:hello@superdock.app">Get in touch.</a></p>
 </section>
 
+<section class="faq" id="faq"><div class="wrap narrow">
+  <h2>Questions people ask</h2>
+
+  <h3>What is Superdock?</h3>
+  <p>Superdock is a replacement for the macOS Dock. It draws its own dock, so it can do the one thing the built-in Dock cannot: show a separate icon for every Google Chrome profile, each with that profile's avatar, its own window list and its own hover previews. Everything else stays as you know it. Your pinned apps, the Trash, running-app dots, drag to reorder, drag off to remove, the running dot and the glass panel are measured against Apple's Dock to the pixel. The system Dock is hidden while Superdock runs and comes back the moment you quit. It also adds what Windows switchers miss: an Alt-Tab style window switcher, a dock on every display that shows the apps with windows on that display, and clickable dock edges for Mission Control and Show Desktop.</p>
+
+  <h3>How is this different from running separate Chrome instances?</h3>
+  <p>Other tools give each profile its own Dock icon by launching a separate copy of Chrome with its own data folder. That costs roughly 2.8 times the memory of one Chrome and forces you to sign in to every account again inside each copy. Superdock leaves Chrome alone. All your profiles keep running in the one Chrome process you already have, sharing memory and logins, and Superdock works out which window belongs to which profile from the window title and Chrome's own profile list. The result is one icon per profile in the dock, with only that profile's windows behind it, and no second Chrome anywhere.</p>
+
+  <h3>What does Superdock cost?</h3>
+  <p>Superdock is $7.99, once. The launch price is discounted from $13.99. There is no subscription, and every future update is included. One licence covers up to five Macs you own; you can remove a Mac from the licence at any time in Settings or on the manage page. The dock itself is free to use forever; the licence is needed for the Chrome profile icons after the 14-day trial, which needs no account and no card. Payment is handled by Paddle as merchant of record, and the licence arrives by email within a minute.</p>
+
+  <h3>What does it need to run?</h3>
+  <p>A Mac running macOS 14 Sonoma or later, on Apple silicon or Intel. Superdock asks for one permission, Accessibility, so it can see other apps' windows; without it there are no window lists, previews or profile icons. Screen Recording is optional and only adds live window thumbnails to previews and the switcher. The app is signed with an Apple Developer ID and notarized, so it opens with a double-click and updates itself over a signed feed.</p>
+
+  <h3>Does it change how my Mac looks?</h3>
+  <p>No. Icon size follows your Dock size setting, and the dock's glass, spacing, running dots and icon sharpness were matched to Apple's Dock by measuring screenshots pixel by pixel. Light and dark mode, the macOS 26 icon styles and the wallpaper showing through the glass all behave as with Apple's Dock. Magnification is available and off by default, like Apple's.</p>
+
+  <p class="updated">Updated 3 September 2026, for Superdock 1.0.1.</p>
+</div></section>
+
 <section class="close">
-  <img class="mark" src="assets/mark.png" alt="">
+  <img class="mark" src="assets/mark-116.png" width="58" height="58" alt="">
   <h2>Give your profiles<br>a home.</h2>
   <div class="actions">
     <a class="btn primary" href="Superdock-1.0.1.dmg">Download for Mac</a>
     <a class="btn ghost" href="blog/">Read the blog</a>
   </div>
 </section>
+</main>
 
 <footer><div class="wrap">
   <div>Copyright 2026 Superdock. All rights reserved.</div>
