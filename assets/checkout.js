@@ -26,6 +26,22 @@
     });
   }
 
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
-  else boot();
+  // Paddle's script (and the cookies it sets) load only when someone reaches
+  // for the Buy button, or on buy.html which needs the checkout at once.
+  function ensurePaddle(then) {
+    if (typeof Paddle !== "undefined") { then(); return; }
+    var s = document.createElement("script"); s.src = "https://cdn.paddle.com/paddle/v2/paddle.js"; s.onload = then; document.head.appendChild(s);
+  }
+  function start() {
+    if (document.body && document.body.hasAttribute("data-auto-checkout")) { ensurePaddle(boot); return; }
+    document.querySelectorAll("[data-checkout]").forEach(function (el) {
+      el.addEventListener("click", function (e) {
+        if (typeof Paddle !== "undefined") return;   // boot() already bound the real handler
+        e.preventDefault(); e.stopImmediatePropagation();
+        ensurePaddle(function () { boot(); el.click(); });
+      }, true);
+    });
+  }
+  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
+  else start();
 })();

@@ -14,7 +14,7 @@
   --ink-dim: #63636d;
   --border: rgba(255,255,255,0.08);
   --border-soft: rgba(255,255,255,0.05);
-  --accent: #2e93ff;        /* one blue; CTA + hover only */
+  --accent: #2e93ff; --accent-btn: #1669e0;        /* one blue; CTA + hover only */
   --display: "General Sans", -apple-system, ui-sans-serif, system-ui, sans-serif;
   --body: "Inter", -apple-system, ui-sans-serif, system-ui, sans-serif;
   --max: 1160px;
@@ -29,7 +29,7 @@ img, video { display: block; max-width: 100%; }
 
 /* buttons — one solid blue CTA, one quiet ghost. No gloss, no gimmick. */
 .btn { display: inline-flex; align-items: center; gap: 8px; font-family: var(--body); font-weight: 600; font-size: 15px; padding: 12px 22px; border-radius: 10px; transition: opacity .15s, background .15s; cursor: pointer; }
-.btn.primary { background: var(--accent); color: #fff; }
+.btn.primary { background: var(--accent-btn, #1669e0); color: #fff; }
 .btn.primary:hover { opacity: .9; }
 .btn.ghost { background: rgba(255,255,255,.05); color: var(--ink); border: 1px solid var(--border); }
 .btn.ghost:hover { background: rgba(255,255,255,.08); }
@@ -46,7 +46,7 @@ header.nav { position: sticky; top: 0; z-index: 50; background: rgba(8,8,10,.78)
 .nav .links { display: flex; align-items: center; gap: 30px; margin: 0 auto; }
 .nav .links a:not(.navcta) { color: var(--ink-muted); font-size: 15px; font-weight: 500; transition: color .15s; }
 .nav .links a:not(.navcta):hover { color: var(--ink); }
-.nav .navcta { display: inline-flex; align-items: center; background: var(--accent); color: #fff; font-weight: 600; font-size: 14px; padding: 9px 18px; border-radius: 9px; box-shadow: 0 4px 14px -4px rgba(46,147,255,.5); transition: background .15s, transform .1s; }
+.nav .navcta { display: inline-flex; align-items: center; background: var(--accent-btn, #1669e0); color: #fff; font-weight: 600; font-size: 14px; padding: 9px 18px; border-radius: 9px; box-shadow: 0 4px 14px -4px rgba(46,147,255,.5); transition: background .15s, transform .1s; }
 .nav .navcta:hover { background: #1b7fee; }
 .nav .navcta:active { transform: scale(.97); }
 @media (max-width: 760px) { .nav .links { display: none; } }
