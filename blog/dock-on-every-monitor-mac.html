@@ -1,0 +1,43 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Show the Dock on every monitor on a Mac (2026 guide)</title>
+<meta name="description" content="macOS puts the Dock on one display at a time and moves it when your pointer touches another screen&#x27;s edge. Here is how that works, its limits, and how to get a dock on every monitor.">
+<link rel="canonical" href="https://superdock.app/blog/dock-on-every-monitor-mac.html">
+<link rel="describedby" href="https://superdock.app/llms.txt">
+<meta property="og:type" content="article"><meta property="og:url" content="https://superdock.app/blog/dock-on-every-monitor-mac.html"><meta property="og:site_name" content="Superdock">
+<meta property="og:title" content="How to show the Dock on every monitor on a Mac"><meta property="og:description" content="macOS puts the Dock on one display at a time and moves it when your pointer touches another screen&#x27;s edge. Here is how that works, its limits, and how to get a dock on every monitor.">
+<meta property="og:image" content="https://superdock.app/blog/img/dock-on-every-monitor-mac-hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/mark.png"><link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Superdock", "item": "https://superdock.app/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://superdock.app/blog/"}, {"@type": "ListItem", "position": 3, "name": "How to show the Dock on every monitor on a Mac", "item": "https://superdock.app/blog/dock-on-every-monitor-mac.html"}]}, {"@type": "Article", "headline": "How to show the Dock on every monitor on a Mac", "description": "macOS puts the Dock on one display at a time and moves it when your pointer touches another screen's edge. Here is how that works, its limits, and how to get a dock on every monitor.", "url": "https://superdock.app/blog/dock-on-every-monitor-mac.html", "datePublished": "2026-09-03", "dateModified": "2026-09-03", "image": "https://superdock.app/blog/img/dock-on-every-monitor-mac-hero.jpg", "author": {"@type": "Person", "name": "Mahad Kazmi", "url": "https://superdock.app/#org", "jobTitle": "Developer of Superdock"}, "publisher": {"@type": "Organization", "name": "Superdock", "url": "https://superdock.app/", "logo": {"@type": "ImageObject", "url": "https://superdock.app/assets/mark.png"}}, "about": {"@type": "SoftwareApplication", "name": "Superdock", "url": "https://superdock.app/"}}, {"@type": "HowTo", "name": "Show a dock on every monitor on a Mac", "step": [{"@type": "HowToStep", "position": 1, "name": "Install Superdock", "text": "Download it, drag to Applications, launch, grant Accessibility."}, {"@type": "HowToStep", "position": 2, "name": "Set Display to All displays", "text": "Settings, General, Layout: All displays is the default and puts one dock on every monitor."}, {"@type": "HowToStep", "position": 3, "name": "Pick the running-apps scope", "text": "Choose On every dock or Where their windows are."}]}]}</script>
+</head><body>
+<header class="nav"><div class="wrap"><a class="brand" href="/"><img src="../assets/mark.png" alt="">Superdock</a><div class="links"><a href="/#previews">Previews</a><a href="/#pricing">Pricing</a><a href="./">Blog</a></div><a class="navcta" href="../Superdock-1.0.1.dmg">Download for Mac</a></div></header>
+<main><article class="wrap doc post">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Superdock</a> / <a href="./">Blog</a></nav>
+<h1>How to show the Dock on every monitor on a Mac</h1>
+<p class="byline">By Mahad Kazmi, developer of Superdock. Updated 3 September 2026.</p>
+<img class="hero" src="img/dock-on-every-monitor-mac-hero.jpg" srcset="img/dock-on-every-monitor-mac-hero-800.jpg 800w, img/dock-on-every-monitor-mac-hero.jpg 1600w" sizes="(max-width: 800px) 100vw, 760px" width="1600" height="900" alt="Two monitors side by side, each showing its own dock at the bottom edge" loading="eager" fetchpriority="high">
+<p><strong>Short answer:</strong> macOS shows the Dock on one display at a time. With Displays have separate Spaces turned on, the Dock jumps to another monitor when you hold the pointer at that screen's bottom edge for a moment. There is no built-in way to keep a Dock on every monitor at once; Superdock adds that, and can show each monitor only the apps whose windows are on it.</p>
+<h2>How does the Dock behave with two monitors?</h2>
+<p>By default the Dock lives on the display where the menu bar is (System Settings, Displays, Arrange, drag the white bar to choose). If Displays have separate Spaces is on (System Settings, Desktop &amp; Dock), moving the pointer to the bottom edge of another display and pausing pulls the Dock over to that display. It is a single Dock that travels, not one per screen, and the travel needs a deliberate pause that many people find fiddly.</p>
+<h2>Can I keep a Dock on each monitor with macOS alone?</h2>
+<p>No. You can move it, hide it, or change its size and side, but you cannot duplicate it. Every request for a per-display Dock ends at a third-party tool.</p>
+<h2>How do I get a dock on every monitor?</h2>
+<ol class="steps">
+<li><b>Install Superdock</b> and grant Accessibility when asked.</li>
+<li><b>Check Settings, General, Layout, Display.</b> All displays is the default: one dock per connected monitor, each at the bottom of its own screen, all identical in size and style to Apple's.</li>
+<li><b>Choose what each dock shows.</b> Running apps: On every dock shows the same running row everywhere. Where their windows are shows each monitor only the apps that have a window on that monitor, so the dock in front of you matches what is on that screen. Pinned apps always show on every dock.</li>
+</ol>
+<h2>What about the other display modes?</h2>
+<p>Main display keeps a single dock on the menu bar screen. Follows pointer keeps a single dock and moves it to whichever screen the pointer is on, immediately, without Apple's edge-and-pause gesture. Both are one click away in the same setting.</p>
+<h2>Frequently asked questions</h2>
+<details class="qa"><summary><h3>Do the docks stay in sync?</h3></summary><p>Yes. Pins, order and settings are shared; only the running row can differ, and only if you choose Where their windows are.</p></details>
+<details class="qa"><summary><h3>Does the system Dock get in the way?</h3></summary><p>No. Superdock hides Apple's Dock while it runs and restores it exactly as it was when you quit.</p></details>
+<details class="qa"><summary><h3>Does it work with different resolutions?</h3></summary><p>Yes. Each dock sizes itself from the Dock size setting, the same one Apple uses, on its own display.</p></details>
+
+<div class="cta"><p><a class="btn primary" href="../Superdock-1.0.1.dmg">Download Superdock for Mac</a> <span class="muted">Free for 14 days, no account. $7.99 once after that.</span></p></div>
+<h2>Continue reading</h2>
+<ul class="related"><li><a href="alt-tab-on-mac.html">Alt-Tab on Mac: how to switch between windows like Windows</a></li><li><a href="chrome-profile-dock-icons-mac.html">How to get a separate Dock icon for each Chrome profile on Mac</a></li><li><a href="mac-dock-replacements-2026.html">Mac Dock replacements in 2026: what each one actually changes</a></li></ul>
+</article></main>
+<footer><div class="wrap"><div class="row"><div>Copyright 2026 Superdock. All rights reserved.</div><div class="links"><a href="../terms.html">Terms</a> <a href="../privacy.html">Privacy</a> <a href="../refund.html">Refunds</a></div></div></div></footer>
+</body></html>

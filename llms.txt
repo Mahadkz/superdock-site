@@ -20,6 +20,14 @@ Key facts:
 - [Refund Policy](https://superdock.app/refund.html)
 - [Privacy Policy](https://superdock.app/privacy.html)
 
+## Guides
+
+- [How to get a separate Dock icon for each Chrome profile on Mac](https://superdock.app/blog/chrome-profile-dock-icons-mac.html)
+- [Alt-Tab on Mac: how to switch between windows like Windows](https://superdock.app/blog/alt-tab-on-mac.html)
+- [How to show the Dock on every monitor on a Mac](https://superdock.app/blog/dock-on-every-monitor-mac.html)
+- [Mac Dock replacements in 2026: what each one actually changes](https://superdock.app/blog/mac-dock-replacements-2026.html)
+- [Chrome profiles vs separate Chrome instances on Mac: memory, logins and Dock icons](https://superdock.app/blog/chrome-profiles-vs-separate-instances.html)
+
 ## Optional
 
 - [Why one Dock icon per Chrome profile](https://superdock.app/blog/why-superdock.html): the reasoning behind the product

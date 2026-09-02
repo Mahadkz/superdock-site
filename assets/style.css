@@ -184,3 +184,52 @@ footer .links a:hover { color: var(--ink); }
 .faq p { color: var(--ink-muted); font-size: 15px; line-height: 1.6; }
 .faq .updated { font-size: 13px; color: var(--ink-muted); margin-top: 30px; }
 footer, footer .links a { color: var(--ink-muted); }
+
+/* Blog posts */
+.post .crumbs { font-size: 13px; color: var(--ink-muted); margin-bottom: 14px; }
+.post .crumbs a { color: var(--ink-muted); }
+.post .byline { font-size: 13px; color: var(--ink-muted); margin: -6px 0 22px; }
+.post img.hero { width: 100%; height: auto; border-radius: 14px; margin: 0 0 28px; display: block; }
+.post h2 { margin-top: 34px; }
+.post h3 { margin-top: 22px; font-size: 17px; }
+.post ol.steps li b { display: inline; }
+.post table.compare { width: 100%; border-collapse: collapse; margin: 18px 0 24px; font-size: 14px; }
+.post table.compare th, .post table.compare td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+.post table.compare th { color: var(--ink); font-weight: 600; }
+.post .cta { margin: 34px 0; padding: 22px; border: 1px solid var(--border); border-radius: 14px; }
+.post .cta .muted { display: block; margin-top: 10px; font-size: 13px; color: var(--ink-muted); }
+.post ul.related { padding-left: 18px; }
+.post ul.related li { margin: 6px 0; }
+
+/* FAQ accordions: the question is the control, the answer stays in the DOM for crawlers */
+details.qa { border-top: 1px solid var(--border); }
+details.qa:last-of-type { border-bottom: 1px solid var(--border); }
+details.qa summary { list-style: none; cursor: pointer; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 0; }
+details.qa summary::-webkit-details-marker { display: none; }
+details.qa summary h3 { margin: 0; font-size: 17px; font-weight: 600; }
+details.qa summary::after { content: "+"; font-size: 22px; line-height: 1; color: var(--ink-muted); flex: none; transition: transform .15s; }
+details.qa[open] summary::after { content: "\2212"; }
+details.qa p { margin: 0 0 18px; }
+
+/* Mobile */
+@media (max-width: 760px) {
+  .wrap { padding: 0 18px; }
+  .nav .wrap { height: 58px; justify-content: space-between; gap: 12px; }
+  .nav .brand { font-size: 17px; }
+  .nav .navcta { padding: 8px 14px; font-size: 13px; white-space: nowrap; }
+  .hero { padding-top: 40px; }
+  .hero h1 { font-size: clamp(34px, 10vw, 48px); }
+  .hero .sub { font-size: 17px; }
+  .hero .pill { font-size: 12px; padding: 5px 12px; }
+  .hero .actions, .close .actions { flex-direction: column; align-items: stretch; gap: 10px; }
+  .hero .actions .btn, .close .actions .btn { text-align: center; }
+  .hero .frame, .media, video { max-width: 100%; }
+  .center-feat .media, .feat .media { margin: 0; }
+  .statement h2, .pricing h2, .close h2, .faq h2 { font-size: 28px; }
+  .plaque { width: auto; margin: 0 18px; }
+  .plaque .price { font-size: 40px; }
+  .faq .wrap.narrow { padding: 0 18px; }
+  footer .wrap { flex-direction: column; align-items: flex-start; }
+  .post img.hero { border-radius: 10px; }
+  .post table.compare { display: block; overflow-x: auto; }
+}

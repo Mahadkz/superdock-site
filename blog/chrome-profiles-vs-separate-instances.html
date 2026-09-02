@@ -1,0 +1,49 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chrome profiles vs separate Chrome instances on Mac</title>
+<meta name="description" content="Two ways to keep work and personal Chrome apart on a Mac: profiles inside one Chrome, or a separate Chrome instance per identity. Memory, logins, Dock icons and updates compared, with a measurement.">
+<link rel="canonical" href="https://superdock.app/blog/chrome-profiles-vs-separate-instances.html">
+<link rel="describedby" href="https://superdock.app/llms.txt">
+<meta property="og:type" content="article"><meta property="og:url" content="https://superdock.app/blog/chrome-profiles-vs-separate-instances.html"><meta property="og:site_name" content="Superdock">
+<meta property="og:title" content="Chrome profiles vs separate Chrome instances on Mac: memory, logins and Dock icons"><meta property="og:description" content="Two ways to keep work and personal Chrome apart on a Mac: profiles inside one Chrome, or a separate Chrome instance per identity. Memory, logins, Dock icons and updates compared, with a measurement.">
+<meta property="og:image" content="https://superdock.app/blog/img/chrome-profiles-vs-separate-instances-hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../assets/mark.png"><link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Superdock", "item": "https://superdock.app/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://superdock.app/blog/"}, {"@type": "ListItem", "position": 3, "name": "Chrome profiles vs separate Chrome instances on Mac: memory, logins and Dock icons", "item": "https://superdock.app/blog/chrome-profiles-vs-separate-instances.html"}]}, {"@type": "Article", "headline": "Chrome profiles vs separate Chrome instances on Mac: memory, logins and Dock icons", "description": "Two ways to keep work and personal Chrome apart on a Mac: profiles inside one Chrome, or a separate Chrome instance per identity. Memory, logins, Dock icons and updates compared, with a measurement.", "url": "https://superdock.app/blog/chrome-profiles-vs-separate-instances.html", "datePublished": "2026-09-03", "dateModified": "2026-09-03", "image": "https://superdock.app/blog/img/chrome-profiles-vs-separate-instances-hero.jpg", "author": {"@type": "Person", "name": "Mahad Kazmi", "url": "https://superdock.app/#org", "jobTitle": "Developer of Superdock"}, "publisher": {"@type": "Organization", "name": "Superdock", "url": "https://superdock.app/", "logo": {"@type": "ImageObject", "url": "https://superdock.app/assets/mark.png"}}, "about": {"@type": "SoftwareApplication", "name": "Superdock", "url": "https://superdock.app/"}}]}</script>
+</head><body>
+<header class="nav"><div class="wrap"><a class="brand" href="/"><img src="../assets/mark.png" alt="">Superdock</a><div class="links"><a href="/#previews">Previews</a><a href="/#pricing">Pricing</a><a href="./">Blog</a></div><a class="navcta" href="../Superdock-1.0.1.dmg">Download for Mac</a></div></header>
+<main><article class="wrap doc post">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Superdock</a> / <a href="./">Blog</a></nav>
+<h1>Chrome profiles vs separate Chrome instances on Mac: memory, logins and Dock icons</h1>
+<p class="byline">By Mahad Kazmi, developer of Superdock. Updated 3 September 2026.</p>
+<img class="hero" src="img/chrome-profiles-vs-separate-instances-hero.jpg" srcset="img/chrome-profiles-vs-separate-instances-hero-800.jpg 800w, img/chrome-profiles-vs-separate-instances-hero.jpg 1600w" sizes="(max-width: 800px) 100vw, 760px" width="1600" height="900" alt="One browser window with three avatars beside three separate browser windows with one avatar each" loading="eager" fetchpriority="high">
+<p><strong>Short answer:</strong> Chrome profiles share one process and one set of logins and cost almost nothing extra; separate instances give each identity its own Dock icon but multiply memory and force a sign-in per copy. In our measurement, three instances used about 2.8 times the memory of one Chrome running the same three profiles. The Dock icon problem is the only real reason people pick instances, and a dock that separates profiles removes it.</p>
+<h2>What is a Chrome profile?</h2>
+<p>A profile is a separate set of bookmarks, history, extensions, cookies and Google account inside one running Chrome. Switching profiles opens a new window; all windows share the same process, so memory for the browser engine, extensions and GPU process is paid once. Chrome shows the profile's avatar in the window's top corner, and puts the profile name at the end of the window title.</p>
+<h2>What is a separate Chrome instance?</h2>
+<p>An instance is Chrome launched with a different data folder, so macOS sees a second app. Each instance has its own process tree, its own Dock icon, and its own copy of everything: extensions load again, the GPU and network processes start again, and every Google account signs in again. Scripts and small utilities exist to automate the launch.</p>
+<h2>How do they compare?</h2>
+<table class="compare">
+<tr><th></th><th>Profiles in one Chrome</th><th>Separate instances</th></tr>
+<tr><td>Memory</td><td>One engine, shared</td><td>One engine per identity; about 2.8x for three in our test</td></tr>
+<tr><td>Logins</td><td>Sign in once per account</td><td>Sign in again in every instance</td></tr>
+<tr><td>Extensions</td><td>Installed per profile, loaded once</td><td>Installed and loaded per instance</td></tr>
+<tr><td>Dock icon</td><td>One icon for all profiles</td><td>One icon per instance</td></tr>
+<tr><td>Updates</td><td>One Chrome to update</td><td>Each instance updates itself</td></tr>
+<tr><td>Fragility</td><td>None</td><td>Launch scripts break on Chrome updates</td></tr>
+</table>
+<h2>Is there a way to get per-profile Dock icons without instances?</h2>
+<p>Yes. Superdock replaces the Dock and attributes each Chrome window to its profile from the window title and Chrome's own profile list. The result is one Dock icon per profile with its avatar, only that profile's windows on hover and right-click, and Chrome untouched: one process, shared memory, logins intact. It is the profile model with the one thing it lacked.</p>
+<h2>How did we measure the memory figure?</h2>
+<p>On a Mac with three signed-in profiles, we compared Activity Monitor's total memory for all Chrome processes when the three profiles ran in one Chrome against three instances launched with separate data folders, each with the same extensions. The ratio was about 2.8 to 1 for the instances. Your figure will vary with extensions and open tabs, but the direction does not: every instance pays for the browser engine again.</p>
+<h2>Frequently asked questions</h2>
+<details class="qa"><summary><h3>Can I use both?</h3></summary><p>Yes. Superdock shows each separate instance as its own tile too, named after its launcher, next to the profile tiles of your main Chrome.</p></details>
+<details class="qa"><summary><h3>Do profile tiles survive a Chrome update?</h3></summary><p>Yes. Attribution reads window titles and Chrome's profile list, both stable across versions.</p></details>
+<details class="qa"><summary><h3>What if two profiles have the same name?</h3></summary><p>Superdock cannot tell them apart from titles alone and keeps their windows on the plain Chrome tile rather than guess. Give the profiles different names in Chrome.</p></details>
+
+<div class="cta"><p><a class="btn primary" href="../Superdock-1.0.1.dmg">Download Superdock for Mac</a> <span class="muted">Free for 14 days, no account. $7.99 once after that.</span></p></div>
+<h2>Continue reading</h2>
+<ul class="related"><li><a href="chrome-profile-dock-icons-mac.html">How to get a separate Dock icon for each Chrome profile on Mac</a></li><li><a href="mac-dock-replacements-2026.html">Mac Dock replacements in 2026: what each one actually changes</a></li><li><a href="alt-tab-on-mac.html">Alt-Tab on Mac: how to switch between windows like Windows</a></li></ul>
+</article></main>
+<footer><div class="wrap"><div class="row"><div>Copyright 2026 Superdock. All rights reserved.</div><div class="links"><a href="../terms.html">Terms</a> <a href="../privacy.html">Privacy</a> <a href="../refund.html">Refunds</a></div></div></div></footer>
+</body></html>
