@@ -1,14 +1,11 @@
-// Superdock checkout via Paddle.js (overlay).
-// Live checkout. PADDLE_ENV "sandbox" with a test_ token and sandbox ids for testing.
+// Superdock checkout via Paddle.js (overlay). Live account only.
 (function () {
-  var PADDLE_ENV = "production";                                  // "production" at launch
   var PADDLE_TOKEN = "live_584bba7661f8225e229c71a0f6b";   // live client-side token (public by design)
   var PRICE_ID = "pri_01m1hqayef0071qrwkgn0277hb"; // $13.99 list price (live)
   var DISCOUNT_ID = "dsc_01m1hqazephp81svnaszsrg0cv"; // launch discount, $6.00 off, applied automatically
 
   function boot() {
     if (typeof Paddle === "undefined") return;
-    if (PADDLE_ENV === "sandbox") Paddle.Environment.set(PADDLE_ENV);
     Paddle.Initialize({ token: PADDLE_TOKEN });
 
     // This page is also Paddle's "default payment link": a transaction created
