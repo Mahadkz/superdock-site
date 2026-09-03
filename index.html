@@ -165,7 +165,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <section class="pricing" id="pricing">
   <div class="head">
     <h2>One price. Yours to keep.</h2>
-    <p>The dock is free, forever. Chrome profile icons are one purchase after a 14-day trial, no card.</p>
+    <p>The dock is free, forever. Chrome profile icons are one purchase after a 14-day trial, no card. Licences open shortly; download now and the trial starts when you are ready.</p>
   </div>
   <div class="plaque">
     <span class="badge">Launch price</span>
@@ -178,7 +178,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <li>No subscription, ever</li>
     </ul>
     <a class="btn primary" href="Superdock-1.0.1.dmg">Download free</a>
-    <a class="btn ghost buyline" href="#" data-checkout>Buy now, $7.99</a>
+    <form class="notify" data-notify>
+      <label class="sr-only" for="notify-pricing">Email address</label>
+      <input id="notify-pricing" type="email" name="email" placeholder="you@example.com" required autocomplete="email">
+      <button class="btn primary" type="submit">Tell me when licences open</button>
+      <p class="notify-note">Licences open as soon as our payment provider finishes verifying us. One email, then never again.</p>
+    </form>
   </div>
   <p class="foot">Teams and agencies, volume pricing available. <a href="mailto:hello@superdock.app">Get in touch.</a></p>
 </section>
@@ -190,7 +195,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <details class="qa"><summary><h3>How is this different from running separate Chrome instances?</h3></summary><p>Other tools give each profile its own Dock icon by launching a separate copy of Chrome with its own data folder. That costs roughly 2.8 times the memory of one Chrome and forces you to sign in to every account again inside each copy. Superdock leaves Chrome alone. All your profiles keep running in the one Chrome process you already have, sharing memory and logins, and Superdock works out which window belongs to which profile from the window title and Chrome's own profile list. The result is one icon per profile in the dock, with only that profile's windows behind it, and no second Chrome anywhere.</p></details>
 
-  <details class="qa"><summary><h3>What does Superdock cost?</h3></summary><p>The dock is free to download and stays free. The Chrome profile icons are $7.99, once, after a 14-day trial. The launch price is discounted from $13.99. There is no subscription, and every future update is included. One licence covers up to five Macs you own; you can remove a Mac from the licence at any time in Settings or on the manage page. The dock itself is free to use forever; the licence is needed for the Chrome profile icons after the 14-day trial, which needs no account and no card. Payment is handled by Paddle as merchant of record, and the licence arrives by email within a minute.</p></details>
+  <details class="qa"><summary><h3>What does Superdock cost?</h3></summary><p>The dock is free to download and stays free. The Chrome profile icons are $7.99, once, after a 14-day trial. Licences are not on sale yet: our payment provider is completing its verification of us, and we will email everyone on the list the day it opens. The launch price is discounted from $13.99. There is no subscription, and every future update is included. One licence covers up to five Macs you own; you can remove a Mac from the licence at any time in Settings or on the manage page. The dock itself is free to use forever; the licence is needed for the Chrome profile icons after the 14-day trial, which needs no account and no card. Payment is handled by Paddle as merchant of record, and the licence arrives by email within a minute.</p></details>
 
   <details class="qa"><summary><h3>What does it need to run?</h3></summary><p>A Mac running macOS 14 Sonoma or later, on Apple silicon or Intel. Superdock asks for one permission, Accessibility, so it can see other apps' windows; without it there are no window lists, previews or profile icons. Screen Recording is optional and only adds live window thumbnails to previews and the switcher. The app is signed with an Apple Developer ID and notarized, so it opens with a double-click and updates itself over a signed feed.</p></details>
 

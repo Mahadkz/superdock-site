@@ -14,7 +14,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="icon" href="assets/mark.png">
 <link rel="stylesheet" href="assets/style.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://superdock.app/buy.html", "url": "https://superdock.app/buy.html", "name": "Buy Superdock", "description": "Buy a Superdock licence for $7.99 once, launch price. Covers up to five Macs you own, includes every future update, no subscription. Secure checkout by Paddle.", "isPartOf": {"@id": "https://superdock.app/#site"}, "about": {"@id": "https://superdock.app/#app"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Superdock", "item": "https://superdock.app/"}, {"@type": "ListItem", "position": 2, "name": "Buy Superdock", "item": "https://superdock.app/buy.html"}]}]}</script>
-</head><body data-auto-checkout>
+</head><body>
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPHGSB98"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -23,11 +23,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <main>
 <section class="doc-hero"><div class="wrap">
   <img class="mark" src="assets/mark.png" alt="">
-  <h1>Buy Superdock</h1>
-  <noscript><p>The checkout needs JavaScript. Email hello@superdock.app and we will send a payment link.</p></noscript>
-  <p class="lead">One purchase, up to five Macs, every update included. Secure checkout by Paddle opens automatically.</p>
-  <a class="btn primary big" href="#" data-checkout>Buy now, $7.99</a>
-  <p class="note">If the checkout did not open, click the button. Your licence arrives by email within a minute of payment.</p>
+  <h1>Licences open shortly</h1>
+  <p class="lead">Superdock is $7.99 once for up to five Macs, and the dock itself is free today. We cannot take payment yet: our payment provider, Paddle, is finishing its verification of the business. Leave your email and you will hear the day it opens.</p>
+  <form class="notify" data-notify>
+      <label class="sr-only" for="notify-buy">Email address</label>
+      <input id="notify-buy" type="email" name="email" placeholder="you@example.com" required autocomplete="email">
+      <button class="btn primary" type="submit">Tell me when licences open</button>
+      <p class="notify-note">Licences open as soon as our payment provider finishes verifying us. One email, then never again.</p>
+    </form>
+  <p class="note">The dock, window previews, the switcher and per-display docks are free right now. <a class="textlink" href="Superdock-1.0.1.dmg">Download Superdock</a> and the Chrome profile trial starts whenever you open it.</p>
   <p class="note"><a class="textlink" href="/#pricing">Back to Superdock</a></p>
 </div></section>
 </main>
