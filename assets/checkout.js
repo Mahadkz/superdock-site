@@ -11,6 +11,11 @@
     if (PADDLE_ENV === "sandbox") Paddle.Environment.set(PADDLE_ENV);
     Paddle.Initialize({ token: PADDLE_TOKEN });
 
+    // This page is also Paddle's "default payment link": a transaction created
+    // through the API links here as ?_ptxn=<id>, and Paddle.js opens that exact
+    // transaction itself. Opening our own price checkout as well would fight it.
+    if (/[?&]_ptxn=/.test(window.location.search)) return;
+
     // buy.html (the app's Buy button lands here): open the checkout at once.
     if (document.body && document.body.hasAttribute("data-auto-checkout")) {
       Paddle.Checkout.open({ items: [{ priceId: PRICE_ID, quantity: 1 }], discountId: DISCOUNT_ID });
