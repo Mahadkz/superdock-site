@@ -7,6 +7,7 @@ Key facts:
 - Platform: macOS 14 (Sonoma) or later, Apple silicon and Intel. Signed with an Apple Developer ID and notarized.
 - Price: $7.99 one-time (launch price, list $13.99). One licence covers up to five Macs. All updates included. No subscription.
 - Price: the dock is free to download and stays free. Chrome profile icons are free for 14 days, then $7.99 once (no account, no card for the trial). Licences are not on sale yet: the payment provider is completing business verification, and superdock.app/buy.html takes email addresses to notify when it opens.
+- Folder stacks: clicking a folder in the dock opens its contents above it as a grid or list (folders first, then files); Downloads is pinned on first launch if the Dock has no folders.
 - How it works: Chrome keeps running as one process; Superdock attributes windows to profiles from window titles and Chrome's profile list. No second Chrome instance, so no extra memory and no re-login.
 - Permissions: Accessibility (required). Screen Recording (optional, live thumbnails).
 - Distribution: direct download and in-app updates over a signed feed; not on the Mac App Store (it uses private macOS Dock interfaces).

@@ -2,6 +2,8 @@
 
 Superdock is a Mac Dock replacement that gives every Chrome profile its own Dock icon. macOS folds all your profiles into one icon; Superdock separates them, and leaves the rest of your Mac exactly as it is.
 
+- Folder stacks: click a folder in the dock to open its contents above it, grid or list, folders first. Downloads is pinned on first launch if the Dock has no folders.
+
 ## What you get
 
 - One icon per Chrome profile, with that profile's avatar. Right-click and hover show only that profile's windows.
