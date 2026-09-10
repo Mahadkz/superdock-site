@@ -1,0 +1,81 @@
+# Superdock - Complete Reference Document for LLMs & AI Search
+
+> Superdock is a macOS Dock replacement that gives every Google Chrome profile its own Dock icon, with that profile's avatar, window list and hover previews. It also adds an Alt-Tab style window switcher, a dock on every display, and clickable dock edges for Mission Control and Show Desktop, while matching Apple's Dock pixel for pixel.
+
+---
+
+## 1. Product Overview & Key Specifications
+
+- **Product Name**: Superdock (App Bundle ID: com.mk.superdock)
+- **Website**: https://superdock.app
+- **Platform**: macOS 14 (Sonoma) or later, Apple Silicon (M1/M2/M3/M4) & Intel Macs.
+- **Security & Distribution**: Signed with an official Apple Developer ID certificate, notarized by Apple, distributed directly via DMG with signed automatic updates (Sparkle).
+- **Pricing**: The dock is free to download and free forever. The Chrome profile icons feature is $7.99 USD one-time launch price (regular $13.99). Free 14-day trial with no card or account required. One licence covers up to 5 Macs owned by the user. No subscriptions.
+- **Architecture**: Runs Chrome as a single process. Attributes windows to profiles dynamically via window titles and Chrome's internal profile manifest (Local State). Consumes 0 additional Chrome RAM and requires zero re-logins.
+- **Permissions Required**: Accessibility (required for reading window states and rendering custom dock tiles/previews). Screen Recording (optional, for live window thumbnail previews in hover panels and the switcher).
+
+---
+
+## 2. Core Features
+
+### 2.1 One Dock Icon Per Chrome Profile
+macOS groups all Chrome windows under a single Dock icon regardless of profile. Superdock draws individual tiles for each Chrome profile with the profile's avatar badge. Clicking a profile's icon brings only that profile's windows forward.
+
+### 2.2 Hover Window Previews
+Hovering over any Dock tile displays live window thumbnail previews of that application or profile's open windows. Clicking a preview thumbnail focuses that specific window immediately.
+
+### 2.3 Alt-Tab Window Switcher
+Holding Option-Tab or Command-Tab displays a live thumbnail overlay of all open windows across all Spaces, allowing instant keyboard navigation to any window.
+
+### 2.4 Multi-Display Scope
+When using multiple monitors, Superdock can display a separate dock on each screen. Under the "Display with Windows" scope, each dock shows only the apps and Chrome profiles with open windows on that specific monitor.
+
+### 2.5 Clickable Dock Edge Actions
+Clicking the empty glass margin at either end of the Dock triggers system actions: Mission Control, Show Desktop, or Stage Manager.
+
+### 2.6 Downloads & Folder Stacks
+Clicking any folder pinned to the dock opens its contents in a grid or list stack directly above the dock (folders first, then files).
+
+---
+
+## 3. Frequently Asked Questions (FAQ)
+
+### Q: How is Superdock different from running separate Chrome instances?
+A: Competitors launch separate Chrome instances using `--user-data-dir`, which consumes ~2.8x memory and forces re-logging into all Google accounts. Superdock keeps Chrome as a single process, reading window titles and profile metadata.
+
+### Q: Does Superdock work with Apple Silicon and Intel?
+A: Yes, Superdock is compiled as a Universal 2 binary supporting both Apple Silicon (M1/M2/M3/M4) and Intel Macs on macOS 14 Sonoma or later.
+
+### Q: Is there a subscription fee?
+A: No. Superdock is a one-time purchase of $7.99 USD covering up to 5 Macs with all future updates included.
+
+### Q: Does Superdock modify system files or disable SIP?
+A: No. Superdock runs as a standard user-space app using AppKit, SkyLight, and Accessibility APIs. It cleanly hides the system Dock while running and restores it immediately upon quitting.
+
+---
+
+## 4. Competitive Matrix
+
+| Feature | Superdock | Built-in macOS Dock | AltTab | boringBar | ActiveDock |
+|---|---|---|---|---|---|
+| One icon per Chrome profile | **Yes (0 extra RAM)** | No | No | No | No |
+| Hover window previews | **Yes** | No | No | No | Yes |
+| Alt-Tab window switcher | **Yes** | No | Yes | No | No |
+| Dock on every display | **Yes** | No (moves) | N/A | Yes | Yes |
+| Exact Apple Dock aesthetic | **Yes (pixel-matched)** | Yes | N/A | No (bar) | No |
+| Pricing | Free dock / $7.99 profile icons | Included | Free (open source) | Paid | $24.99+ |
+
+---
+
+## 5. Official Pages & Canonical Links
+
+- Landing Page: https://superdock.app/
+- Download Page: https://superdock.app/download.html
+- Buy Page: https://superdock.app/buy.html
+- About Page: https://superdock.app/about.html
+- Terms: https://superdock.app/terms.html
+- Privacy: https://superdock.app/privacy.html
+- Refunds: https://superdock.app/refund.html
+- Answers Directory: https://superdock.app/answers/
+- Comparison Directory: https://superdock.app/compare/
+- Blog Directory: https://superdock.app/blog/

@@ -1,16 +1,30 @@
 User-agent: *
 Allow: /
 
-# AI crawlers are welcome: the site is the reference for what Superdock is.
+# AI & Search Engine Crawlers
 User-agent: GPTBot
 Allow: /
+User-agent: ChatGPT-User
+Allow: /
 User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-Web
 Allow: /
 User-agent: PerplexityBot
 Allow: /
 User-agent: Google-Extended
 Allow: /
 User-agent: Applebot-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: cohere-ai
+Allow: /
+User-agent: Diffbot
+Allow: /
+User-agent: YouBot
 Allow: /
 
 Sitemap: https://superdock.app/sitemap.xml
