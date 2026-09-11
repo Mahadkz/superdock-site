@@ -71,6 +71,7 @@ Superdock against each other Dock app, using facts from that app's own website, 
 
 ## Optional
 
+- [About the developer, Mahad Kazmi](https://superdock.app/author/mahad-kazmi.html): who builds Superdock and why
 - [About Superdock](https://superdock.app/about.html): who makes it, how it is built, contact
 
 - [Why one Dock icon per Chrome profile](https://superdock.app/blog/why-superdock.html): the reasoning behind the product

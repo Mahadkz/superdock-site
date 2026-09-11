@@ -312,3 +312,15 @@ form.notify .notify-note { flex: 1 0 100%; margin: 6px 0 0; font-size: 13px; col
 .authorbox .profiles a { color: var(--ink-muted); text-decoration: none; border-bottom: 1px solid var(--border); }
 .authorbox .profiles a:hover { color: var(--ink); }
 @media (max-width: 520px) { .authorbox { grid-template-columns: 44px 1fr; gap: 12px; padding: 18px; } .authorbox img { width: 44px; height: 44px; } }
+
+/* author profile page */
+.profile-head { display: grid; grid-template-columns: 240px 1fr; gap: 32px; align-items: center; margin: 0 0 44px; }
+.profile-head img { width: 240px; height: 300px; object-fit: cover; border-radius: 16px; border: 1px solid var(--border); }
+.profile-head h1 { margin: 0 0 10px; }
+.profile-head .role { font-size: 18px; color: var(--ink-muted); margin: 0 0 14px; }
+.profile-head .profiles { font-size: 14px; color: var(--ink-dim); margin: 0; line-height: 1.9; }
+.profile-head .profiles a { color: var(--ink-muted); text-decoration: none; border-bottom: 1px solid var(--border); }
+.profile-head .profiles a:hover { color: var(--ink); }
+@media (max-width: 640px) { .profile-head { grid-template-columns: 1fr; gap: 20px; text-align: left; } .profile-head img { width: 160px; height: 200px; } }
+.authorbox .name a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--border); }
+.authorbox .name a:hover { color: var(--accent); }
