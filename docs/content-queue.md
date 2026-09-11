@@ -1,5 +1,12 @@
 # Content queue, one piece per day
 
+> **SUPERSEDED 12 September 2026.** Kept as the record of what we planned before
+> the research. The live plan is `content-clusters.md`. See that file's opening
+> section for what changed and why. In short: this was a flat list of 14 topics
+> with no pillars, no clusters and no internal link structure, and three of its
+> entries turned out to be wrong.
+
+
 Ordered by (evidence of demand) x (lack of competition) x (distance to a download).
 Every item traces to a finding in `growth-research-2026-09-11.md`.
 
