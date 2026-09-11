@@ -35,8 +35,9 @@ profiles are useless against fingerprinting, and that audience is leaving Chrome
 9. No em dashes anywhere, including titles and meta descriptions.
 10. **Never promise faster switching.** For ADHD readers friction is the feature.
     Promise knowing where you are.
-11. Do NOT add FAQPage JSON-LD. Google retired the rich result in May 2026 and
-    deleted the docs in June. Keep visible FAQ sections.
+11. Keep FAQ sections AND their FAQPage markup. Google retired the rich result
+    on 7 May 2026, so it earns no search feature, but the markup is harmless and
+    five of six ranking pages still carry it. It still feeds AI extraction.
 
 ---
 
@@ -280,7 +281,7 @@ verticals are now spokes, not clusters.
 ## 5. Rules the original queue had no way to know
 
 - **Never promise faster switching.** ADHD readers told us friction is the feature.
-- **No FAQPage schema.** Google retired the rich result in May 2026.
+- **FAQPage schema is now inert for rich results** (retired 7 May 2026) but harmless. Keep it for AI extraction.
 - **Disclose bias in the first screen** and give rivals genuine wins. The sites
   beating publishers here all do this, and one ranks itself last of four.
 - **Write in their vocabulary.** The glossary at the end of this file did not exist.
