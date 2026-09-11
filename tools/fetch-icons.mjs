@@ -14,6 +14,11 @@ const APPS = [
   { slug: 'ice',         name: 'Ice',         site: 'https://icemenubar.app/',            icon: 'https://icemenubar.app/gallery/Ice%20Cube.png' },
   { slug: 'linearmouse', name: 'LinearMouse', site: 'https://linearmouse.app/',           icon: 'https://raw.githubusercontent.com/linearmouse/linearmouse/main/LinearMouse/Assets.xcassets/AppIcon.appiconset/Icon-256.png' },
   { slug: 'dockdoor',    name: 'DockDoor',    site: 'https://dockdoor.net/',              icon: 'https://dockdoor.net/Assets/Assets.xcassets/AppIcon.appiconset/AppIcon-iOS-Default-512x512@1x.png' },
+  { slug: 'iina',        name: 'IINA',        site: 'https://iina.io/',                   icon: 'https://iina.io/images/iina-icon-60.png' },
+  { slug: 'appcleaner',  name: 'AppCleaner',  site: 'https://freemacsoft.net/appcleaner/', icon: 'https://freemacsoft.net/img/appcleaner.png' },
+  { slug: 'shottr',      name: 'Shottr',      site: 'https://shottr.cc/',                  icon: 'https://shottr.cc/assets/logo.png' },
+  { slug: 'stats',       name: 'Stats',       site: 'https://github.com/exelban/stats',    icon: 'https://raw.githubusercontent.com/exelban/stats/master/Stats/Supporting%20Files/Assets.xcassets/AppIcon.appiconset/icon_256x256.png' },
+  { slug: 'keka',        name: 'Keka',        site: 'https://www.keka.io/',                icon: 'https://www.keka.io/img/Keka-Square-512x512.png' },
 ];
 
 const exists = async p => { try { await access(p); return true; } catch { return false; } };

@@ -1,0 +1,94 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MPHGSB98');</script>
+<!-- End Google Tag Manager -->
+<title>Why do all Chrome profiles share one Dock icon on Mac?</title>
+<meta name="description" content="The Dock gives one tile per process and every Chrome profile shares one process. Four workarounds, and what each one really costs.">
+<link rel="canonical" href="https://superdock.app/answers/why-chrome-profiles-share-one-dock-icon.html">
+<link rel="alternate" type="text/markdown" href="https://superdock.app/answers/why-chrome-profiles-share-one-dock-icon.html.md">
+<link rel="describedby" href="https://superdock.app/llms.txt">
+<meta property="og:type" content="article"><meta property="og:url" content="https://superdock.app/answers/why-chrome-profiles-share-one-dock-icon.html"><meta property="og:site_name" content="Superdock"><meta property="og:title" content="Why do all Chrome profiles share one Dock icon on Mac?"><meta property="og:description" content="The Dock gives one tile per process and every Chrome profile shares one process. Four workarounds, and what each one really costs."><meta property="og:image" content="https://superdock.app/assets/icon-1024.png">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Why do all Chrome profiles share one Dock icon on Mac?"><meta name="twitter:description" content="The Dock gives one tile per process and every Chrome profile shares one process. Four workarounds, and what each one really costs."><meta name="twitter:image" content="https://superdock.app/assets/icon-1024.png">
+
+<link rel="preload" href="../assets/fonts/GeneralSans-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/GeneralSans-500.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebPage", "@id": "https://superdock.app/answers/why-chrome-profiles-share-one-dock-icon.html", "url": "https://superdock.app/answers/why-chrome-profiles-share-one-dock-icon.html", "name": "Why do all my Chrome profiles share one Dock icon?", "description": "Because the Dock allocates one tile per process and every Chrome profile runs in the same process. Here are the four workarounds, with what each one actually costs.", "datePublished": "2026-09-12", "dateModified": "2026-09-12", "isPartOf": {"@id": "https://superdock.app/#site"}, "about": {"@id": "https://superdock.app/#app"}, "author": {"@id": "https://superdock.app/#mahad"}, "publisher": {"@id": "https://superdock.app/#org"}, "primaryImageOfPage": "https://superdock.app/assets/icon-1024.png"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Superdock", "item": "https://superdock.app/"}, {"@type": "ListItem", "position": 2, "name": "Answers", "item": "https://superdock.app/answers/"}, {"@type": "ListItem", "position": 3, "name": "Why do all my Chrome profiles share one Dock icon?", "item": "https://superdock.app/answers/why-chrome-profiles-share-one-dock-icon.html"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Can I get separate Dock icons without any third-party software?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, in two ways. Safari profiles with Shortcuts, or launching Chrome with a separate user data directory using a script. Both are free and both have the costs described above."}}, {"@type": "Question", "name": "Did macOS remove this ability recently?", "acceptedAnswer": {"@type": "Answer", "text": "No. That claim circulates on forums but has no supporting evidence in Chromium's bug tracker, Chrome's release notes or Apple's documentation. Chrome's desktop shortcut feature never existed on macOS."}}, {"@type": "Question", "name": "Does the same problem affect Edge and Firefox?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. It is a consequence of how the macOS Dock works rather than anything specific to Chrome, so every Chromium browser and Firefox behave the same way."}}, {"@type": "Question", "name": "Why can Windows do this?", "acceptedAnswer": {"@type": "Answer", "text": "The Windows taskbar groups by window rather than by application, so a browser can register each profile window as its own entry. The two systems made different choices early on."}}, {"@type": "Question", "name": "Is there a keyboard shortcut to switch Chrome profiles?", "acceptedAnswer": {"@type": "Answer", "text": "No. Chrome offers no menu item, no assignable shortcut and no flag for it. A launcher like Raycast can open a named profile, which is the closest practical substitute."}}]}, {"@type": "Person", "@id": "https://superdock.app/#mahad", "name": "Mahad Kazmi", "url": "https://superdock.app/author/mahad-kazmi.html", "email": "hello@superdock.app", "jobTitle": "Independent software developer", "description": "Independent macOS developer and the author of Superdock.", "sameAs": ["https://github.com/Mahadkz", "https://www.linkedin.com/in/syed-mahad-kazmi/"]}]}</script>
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/mark.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/icon-256.png">
+</head><body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MPHGSB98"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class="nav"><div class="wrap"><a class="brand" href="/"><img src="../assets/mark.png" alt="">Superdock</a><div class="links"><a href="/answers/">Answers</a><a href="/compare/">Compare</a><a href="/#pricing">Pricing</a><a href="/blog/">Blog</a></div><a class="navcta" href="../Superdock-1.0.3.dmg">Download free</a></div></header>
+<main><article class="wrap doc post">
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/">Superdock</a> / <a href="./">Answers</a></nav>
+<h1>Why do all my Chrome profiles share one Dock icon?</h1>
+<p class="byline">By Mahad Kazmi, developer of Superdock. Updated 12 September 2026.</p>
+<div class="answer"><img src="../assets/icon-256.png" width="72" height="72" alt="Superdock icon"><div><p class="short"><strong>Short answer.</strong> Because the macOS Dock gives <b>one tile per running process</b>, and every Chrome profile runs inside a single Chrome process. Google's own support forum puts it plainly: on Windows the taskbar groups by window, so each profile window can have its own icon, while on Mac the Dock groups by application. There are four workarounds and every one of them has a real cost.</p></div></div>
+
+<p class="disclosure">A disclosure before the workarounds. The fourth option below is my own app, and I have tried to be straight about where the other three are the better answer. Two of them are free, and one of them is built into macOS.</p>
+
+<h2>The mechanism, exactly</h2>
+<p>The Dock is a list of running applications. macOS identifies an application by its process, and creates one tile for each. Chrome runs all of your profiles inside one browser process, so macOS sees one application and draws one tile.</p>
+<p>This is not a Chrome bug and it is not an oversight. It follows from the Dock being application-centric, the same design that makes Command-Tab switch apps rather than windows.</p>
+<p>Windows made the opposite choice. Its taskbar tracks windows, which is why Chrome can register each profile as its own taskbar button there, complete with a distinct icon. People switching to a Mac notice this within a day and often assume something is misconfigured.</p>
+
+<h2>A claim worth correcting</h2>
+<p>You will find forum posts saying recent macOS versions <i>removed</i> the ability for browsers to give profiles their own Dock icons. I went looking for evidence and there is none: no Chromium bug, no Chrome release note, no Apple documentation.</p>
+<p>What is actually true is duller and more useful. Chrome's <b>Add desktop shortcut</b> button in profile settings is a Windows and Linux feature that has never existed on macOS. Questions about it go back to 2012. Nothing was taken away, which also means nothing is likely to be handed back.</p>
+
+<h2>The four workarounds</h2>
+
+<h3>1. Use Safari profiles instead</h3>
+<p>Safari gained profiles recently, and because Shortcuts can open a specific Safari profile, you can put a Shortcut in the Dock with its own custom icon. It genuinely works, it is built into macOS, and it costs nothing.</p>
+<p><b>Cost:</b> you have to move to Safari, and Safari profiles do not separate extensions as thoroughly as Chrome's do.</p>
+
+<h3>2. Launch separate Chrome instances</h3>
+<p>Start Chrome with <code>--user-data-dir</code> pointing at a different folder and macOS treats it as a separate application, so you get a real Dock icon. Usually wrapped in an Automator app or a shell script.</p>
+<p><b>Cost:</b> a lot. Separate data means signing in to every account again, including two-factor. It duplicates the browser, GPU and network processes, which we measured at 1.67 GB becoming about 4.6 GB for three profiles. The community scripts also share one flaw their own authors admit: both icons look identical, so you have solved the count and not the recognition.</p>
+
+<h3>3. Duplicate Chrome.app</h3>
+<p>Copy the application, change its bundle identifier, give it a new icon. Some paid tools automate this.</p>
+<p><b>Cost:</b> roughly 500 MB of disk per copy by one vendor's own admission, the same re-login problem, and the update mechanism usually has to be disabled, which leaves a browser that stops getting security updates.</p>
+
+<h3>4. Replace the Dock</h3>
+<p>A dock that draws its own tiles is not bound to one tile per process, so it can show one tile per profile with that profile's avatar while Chrome carries on as a single process. This is what my app does.</p>
+<p><b>Cost:</b> you are replacing a system component, which is a bigger commitment than a shell script. It needs Accessibility permission to see windows at all. And the profile tiles are the paid feature, at $7.99 once after a 14-day trial, though the dock itself is free.</p>
+
+<h2>At a glance</h2>
+<table>
+<tr><th>Approach</th><th>Cost</th><th>Re-login?</th><th>Verdict</th></tr>
+<tr><td>Safari profiles and Shortcuts</td><td>Free</td><td>No</td><td>Best if you are willing to use Safari</td></tr>
+<tr><td>Separate instances</td><td>Free</td><td>Yes, every account</td><td>Best if you need true isolation</td></tr>
+<tr><td>Duplicated Chrome.app</td><td>Free or paid</td><td>Yes, every account</td><td>Hard to recommend, updates break</td></tr>
+<tr><td>Dock replacement</td><td>$7.99 once</td><td>No</td><td>Best if you want to stay on one Chrome</td></tr>
+</table>
+
+<h2>What none of them fix</h2>
+<p>Command-Tab still groups all your Chrome windows under one entry, whichever route you take, unless you also add a window switcher. And no approach changes Chrome itself, so the profile menu inside the browser works exactly as it always did.</p>
+
+<h2>Frequently asked questions</h2>
+<details class="qa"><summary><h3>Can I get separate Dock icons without any third-party software?</h3></summary><p>Yes, in two ways. Safari profiles with Shortcuts, or launching Chrome with a separate user data directory using a script. Both are free and both have the costs described above.</p></details><details class="qa"><summary><h3>Did macOS remove this ability recently?</h3></summary><p>No. That claim circulates on forums but has no supporting evidence in Chromium&#x27;s bug tracker, Chrome&#x27;s release notes or Apple&#x27;s documentation. Chrome&#x27;s desktop shortcut feature never existed on macOS.</p></details><details class="qa"><summary><h3>Does the same problem affect Edge and Firefox?</h3></summary><p>Yes. It is a consequence of how the macOS Dock works rather than anything specific to Chrome, so every Chromium browser and Firefox behave the same way.</p></details><details class="qa"><summary><h3>Why can Windows do this?</h3></summary><p>The Windows taskbar groups by window rather than by application, so a browser can register each profile window as its own entry. The two systems made different choices early on.</p></details><details class="qa"><summary><h3>Is there a keyboard shortcut to switch Chrome profiles?</h3></summary><p>No. Chrome offers no menu item, no assignable shortcut and no flag for it. A launcher like Raycast can open a named profile, which is the closest practical substitute.</p></details>
+<div class="cta"><img src="../assets/icon-256.png" width="56" height="56" alt=""><div><p><a class="btn primary" href="../Superdock-1.0.3.dmg">Download free</a> <span class="muted">Superdock is free to download. The dock, window previews, the switcher and multi-display support are all free. Chrome profile icons: 14 days free, then $7.99 once. macOS 14 or later.</span></p></div></div>
+<h2>Continue reading</h2>
+<ul class="related"><li><a href="separate-dock-icon-for-each-chrome-profile-mac.html">Can I have a separate Dock icon for each Chrome profile on a Mac?</a></li><li><a href="chrome-profiles-on-mac-like-windows.html">How do I make Chrome profiles work like they do on Windows?</a></li><li><a href="chrome-profiles-on-mac-like-windows.html">How do I make Chrome profiles on a Mac work like they do on Windows?</a></li></ul>
+<div class="authorbox">
+  <img src="../assets/mahad-112.jpg" width="56" height="56" alt="Mahad Kazmi" loading="lazy">
+  <div>
+    <p class="name"><a href="../author/mahad-kazmi.html">Mahad Kazmi</a></p>
+    <p>Independent macOS developer and the author of Superdock. I switched to a Mac from Windows, lost the per profile taskbar buttons I relied on, and built the dock I wanted instead. I write these guides from daily use of the apps in them, and I answer the support email myself.</p>
+    <p class="profiles"><a href="https://github.com/Mahadkz" rel="me noopener" target="_blank">GitHub</a> &middot; <a href="https://www.linkedin.com/in/syed-mahad-kazmi/" rel="me noopener" target="_blank">LinkedIn</a> &middot; <a href="../about.html">About</a> &middot; hello@superdock.app</p>
+  </div>
+</div>
+</article></main>
+<footer><div class="wrap"><div class="row"><div>Copyright 2026 Superdock. All rights reserved.</div><div class="links"><a href="../about.html">About</a> <a href="../terms.html">Terms</a> <a href="../privacy.html">Privacy</a> <a href="../refund.html">Refunds</a> <a href="../affiliates.html">Affiliates</a></div></div></div></footer>
+</body></html>
