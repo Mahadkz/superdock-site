@@ -1,4 +1,4 @@
-# Split Dock — website and releases
+# Split Dock, website and releases
 
 This repository hosts the Split Dock website and its signed release downloads.
 It is served at the project's GitHub Pages URL.
