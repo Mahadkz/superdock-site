@@ -354,3 +354,94 @@ Corroborated by a social media manager in r/MacOS:
 The four buildable verticals all converge on the SAME core queries about Chrome
 profiles and the Dock. That argues for ONE cluster with persona-specific spokes,
 not four parallel clusters.
+
+---
+
+# Part 3, discovery surfaces (the sixth agent)
+
+## 17. Two schema bugs, both now fixed
+
+1. **`softwareVersion` said 1.0.1 while `downloadUrl` served 1.0.3.** Internally
+   contradictory, and a stale version is exactly the fact an assistant repeats
+   verbatim. Fixed, and `Tools/release.sh` now calls a new
+   `Tools/sync-site-version.py` so it cannot drift again.
+2. **No `aggregateRating` or `review` anywhere.** Google's `SoftwareApplication`
+   docs make this a REQUIRED property: "Rating or review, you must include one of
+   the following." Without it the page is **ineligible for the software rich
+   result entirely**, however good the rest of the graph is.
+
+   It cannot be fabricated. That is a manual-action risk, and we already decided
+   never to invent testimonials. **So collecting real reviews is now an SEO
+   dependency, not a nice-to-have.** This is the strongest argument yet for
+   getting the first handful of genuine users to review.
+
+## 18. AlternativeTo is the highest-leverage listing, and the mechanics matter
+
+The insight: we do not need to outrank uBar. We need to **exist on uBar's,
+DockDoor's, ActiveDock's and HyperDock's alternatives lists**, because the Google
+traffic is on "uBar alternative", not on our own page.
+
+From their FAQ, which is unusually candid:
+- Rank is their own algorithm; "Number of likes is one of the most important
+  parameters" and "the more organic the like is, the better it is."
+- **An account must be 7 days old before it can submit a new app.** Create the
+  account now, whenever we plan to list.
+- Two separate actions: "Suggest new application" to list, then "Contribute to
+  this page" on each competitor page to attach as an alternative. **The second is
+  the one that matters.**
+- Approval is manual, days to a week.
+- **No UTM tags on the official URL**, explicitly refused. Track by referer.
+- No links or emails in the description; there are dedicated URL fields.
+- Icon: square PNG or SVG, 280x280 or larger, transparent.
+- Claim developer rights by emailing support from the superdock.app domain.
+- **List one entry, not free and paid separately.** Freemium with a trial is one
+  app, and one entry concentrates likes.
+- **Do not incentivise likes.** Their FAQ says it "may trigger the algorithm to
+  drop it in the ranks or remove it from the front page entirely."
+
+## 19. AI search: our llms.txt is not the lever we assumed
+
+Evidence, and it is fairly damning for on-site AI optimisation:
+- **Ranking is not being cited.** Ahrefs across 15,000 prompts: only **12% of
+  URLs cited by assistants rank in Google's top 10**. Semrush: ChatGPT cites
+  pages ranking 21+ **almost 90% of the time**. Google AI Overviews are the
+  exception at ~38% overlap.
+- **Off-site mentions beat on-site work.** Ahrefs across 75,000 brands: branded
+  web mentions correlate with AI Overview visibility at **0.664, versus 0.218 for
+  backlinks**. Correlational, but the top quartile by mentions earned roughly 10x
+  the AI mentions of the next quartile.
+- **Being an entity transfers; a page win does not.** BrightEdge put pairwise
+  source overlap between engines at 16 to 59%, while brand-level overlap ran 36
+  to 55%.
+- Peer-reviewed grounding exists: the GEO paper (KDD 2024) measured up to 40%
+  visibility gains, driven by citations, quotations from authoritative sources,
+  and statistics.
+- **Reddit is Perplexity's most-cited source at ~46.7%.**
+- No published source-distribution data for Claude. Unknown, not assumed.
+
+**Implication:** the AlternativeTo listings, Reddit participation, awesome-mac and
+roundup inclusions ARE the AI-search strategy. Polishing llms.txt further has a
+much lower expected return than getting listed as an alternative to uBar.
+
+## 20. Ranked discovery surfaces
+
+1. **AlternativeTo.** Do first. Create the account today for the 7-day clock.
+2. **Fix the schema.** Done for the version bug; ratings gate on real reviews.
+3. **Reddit, r/macapps.** Both a human channel and the dominant AI-citation
+   corpus. Participate for weeks before posting.
+4. **Homebrew cask.** Blocked on notability (under 75 stars is an automatic
+   reject, and our app repo is private). Our freemium-with-trial model IS
+   explicitly eligible. Get users to open the cask request; do not self-submit
+   early, because "previously rejected" is permanent.
+5. **Setapp.** Better economics than expected: a **Single-App tier at 75/15 and
+   75/25 that supports one-time purchase**, which fits $7.99 far better than the
+   70/30 usage-based membership. They claim ~30k impressions in an app's first
+   days. Highest absolute payoff, highest effort.
+6. **awesome-mac**, 106k stars, cheap PR, doubles as an AI-corpus signal.
+7. **Written roundup outreach**: extradock.app, appish.app, infyniclick.com,
+   noteifyapp.com all run "best macOS dock alternatives 2026" pages, already rank,
+   and already list uBar and ActiveDock. Reachable by direct email.
+8. **Product Hunt.** Deprioritised. One-day spike, not compounding.
+
+**Not worth doing:** MacUpdate (submission page 404s, evidence of decay), Slant
+(HTTP 526, unhealthy), SaaSHub and Softpedia (low trust, no ranking transparency).
