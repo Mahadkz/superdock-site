@@ -1,0 +1,114 @@
+{
+  "slug": "test-run",
+  "query": "best mac apps for 8gb ram",
+  "variants": [
+    "best mac apps for 8gb ram",
+    "best mac apps for 8gb ram 2026"
+  ],
+  "pages_analysed": 8,
+  "word_count": {
+    "median": 693,
+    "min": 258,
+    "max": 2393
+  },
+  "tables_total": 0,
+  "pages_with_tables": 0,
+  "primary_sources_ranking": 0,
+  "table_stakes_headings": [],
+  "possible_gaps": [
+    "solace",
+    "how to speed up wordpress (optimizations we use for core web vitals)",
+    "curating...",
+    "wired classics",
+    "subscriber exclusives",
+    "the big story",
+    "life as a 21st-century trucker",
+    "inside the perimenopause industrial complex",
+    "the cop who took on flock",
+    "today\u2019s picks",
+    "wired world fair: a festival of the future",
+    "conspiracy! how 9/11 broke america\u2019s brain",
+    "how refurbme works",
+    "ios 27 flips the script: home assistant can now control your apple devices",
+    "pve-ups: a proxmox ups shutdown service",
+    "perfect shortcut focus mode tracking for ios 27 and ipados 27",
+    "my dream desk setup (2026 edition)",
+    "home assistant os: proxmox ve 9 quick start guide",
+    "my top macos app picks (2026 edition)",
+    "home assistant: ios focus mode automations (2027 edition)"
+  ],
+  "term_rate_per_1000": {
+    "use": 9.67,
+    "one": 9.45,
+    "new": 9.23,
+    "free": 9.01,
+    "read": 8.57,
+    "mac": 8.13,
+    "apple": 7.25,
+    "every": 7.03,
+    "device": 6.59,
+    "time": 5.5,
+    "app": 5.5,
+    "works": 5.28,
+    "home": 4.84,
+    "yes": 4.62,
+    "price": 4.4,
+    "like": 4.18,
+    "days": 3.96,
+    "ios": 3.74,
+    "assistant": 3.74,
+    "product": 3.74,
+    "across": 3.52,
+    "users": 3.3,
+    "email": 3.3,
+    "devices": 3.08,
+    "i've": 3.08,
+    "see": 2.86,
+    "place": 2.86,
+    "full": 2.86,
+    "start": 2.86,
+    "day": 2.64
+  },
+  "sources": [
+    {
+      "url": "https://www.theodorehq.com",
+      "words": 464,
+      "headings": 1
+    },
+    {
+      "url": "https://woorkup.com",
+      "words": 319,
+      "headings": 1
+    },
+    {
+      "url": "https://talk.macpowerusers.com",
+      "words": 258,
+      "headings": 0
+    },
+    {
+      "url": "https://www.wired.com/",
+      "words": 414,
+      "headings": 10
+    },
+    {
+      "url": "https://www.refurb.me",
+      "words": 1964,
+      "headings": 1
+    },
+    {
+      "url": "https://www.derekseaman.com",
+      "words": 922,
+      "headings": 10
+    },
+    {
+      "url": "https://usevoicy.com",
+      "words": 2393,
+      "headings": 88
+    },
+    {
+      "url": "https://supasidebar.com",
+      "words": 1340,
+      "headings": 20
+    }
+  ]
+}
