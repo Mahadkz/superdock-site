@@ -1,0 +1,26 @@
+{
+  "_comment": "Publication schedule. Each entry ships on its date. Pages live in answers/ but are absent from sitemap.xml, answers/index.html and llms.txt until published.",
+  "start": "2026-09-13",
+  "days": [
+    { "day": 1, "date": "2026-09-13", "pages": [
+      { "slug": "best-mac-apps-8gb-ram", "title": "Best Mac apps for 8GB of RAM", "blurb": "On a base-model Mac the apps you add matter more than the apps you run. Eleven light native apps, with the memory cost of each stated honestly." },
+      { "slug": "why-clicking-dock-icon-brings-all-windows", "title": "Why does clicking a Dock icon bring all windows to the front?", "blurb": "Because the Dock activates an application, not a window. What the click does, the four native ways to reach one window, and where each stops working." }
+    ]},
+    { "day": 2, "date": "2026-09-14", "pages": [
+      { "slug": "best-mac-apps-under-10-dollars", "title": "Best Mac apps under $10", "blurb": "Twelve Mac apps that cost under ten dollars or nothing, with the exact price in every heading and four free picks that beat paid rivals." },
+      { "slug": "shortcut-toggle-windows-same-app", "title": "Shortcut to toggle between windows of the same app on Mac", "blurb": "Command and backtick is the real answer and it works. Here are its three genuine limits, and the case where identical windows defeat it." }
+    ]},
+    { "day": 3, "date": "2026-09-15", "pages": [
+      { "slug": "why-chrome-profiles-share-one-dock-icon", "title": "Why do all Chrome profiles share one Dock icon on Mac?", "blurb": "Because the Dock gives one tile per process and every Chrome profile runs in the same process. Four workarounds, and what each really costs." },
+      { "slug": "restore-minimized-window-shortcut", "title": "Keyboard shortcut to restore a minimized window on Mac", "blurb": "Hold Option while releasing Command-Tab and macOS restores one minimized window. Why it ignores them otherwise, and what to do with several." }
+    ]},
+    { "day": 4, "date": "2026-09-16", "pages": [
+      { "slug": "best-mac-apps-work-personal-accounts", "title": "Best Mac apps to keep work and personal separate", "blurb": "Separating work from personal on one Mac is an identity problem, not an app problem. Six approaches, ranked by how much they actually separate." },
+      { "slug": "cmd-tab-skips-minimized-windows", "title": "Why does Command-Tab skip minimized and hidden windows?", "blurb": "Command-Tab switches apps, not windows, and macOS parks a minimized window in the Dock. Hold Option as you release to bring one back." }
+    ]},
+    { "day": 5, "date": "2026-09-17", "pages": [
+      { "slug": "chrome-user-data-dir-what-it-costs", "title": "What separate Chrome instances actually cost on a Mac", "blurb": "We measured it. Three profiles in one Chrome used 1.67 GB across 11 processes. The same three as separate instances used about 4.6 GB across 33." },
+      { "slug": "add-spacers-between-dock-icons", "title": "How to add spacers and separators between Dock icons", "blurb": "One Terminal command adds a blank space to the Dock. The command, what each part does, how to remove a spacer, and the narrow variant." }
+    ]}
+  ]
+}

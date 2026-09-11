@@ -3,6 +3,18 @@ Two pieces per day, 60 total. Built 12 September 2026 from the research in
 `listicle-plan.md`, `problem-queries-plan.md`, `comparison-pages-plan.md` and
 `content-clusters.md`.
 
+
+## Linking rule, which governs the whole schedule
+
+**Every piece links only backwards.** A link to something scheduled for a later
+day is a 404 until that day arrives, so each piece links to already-published
+pages only. We also do not add inbound links into live pages ahead of a
+publication, for the same reason. New pages are discovered through the sitemap.
+
+Practical consequence: the later a piece sits in the schedule, the richer its
+internal linking can be, because more targets exist. The day 1 pieces link almost
+entirely to the 36 pages that were already live.
+
 ## Pairing rule
 
 Each day pairs **one large piece with one small one**. This matters for three
@@ -32,7 +44,7 @@ farm, and it means every large piece ships with a small piece that links to it.
 | 4 | `best-mac-apps-work-personal-accounts` | `cmd-tab-skips-minimized-windows` |
 | 5 | `chrome-user-data-dir-what-it-costs` | `add-spacers-between-dock-icons` |
 | 6 | `best-mac-apps-too-many-tabs-windows` | `hide-running-app-from-dock` |
-| 7 | `uBar-alternative` | `toggle-between-google-profile-accounts` |
+| 7 | **`ubar-alternative`** | `toggle-between-google-profile-accounts` |
 
 ## Week 2: constraints, the Chrome core, and the first comparisons
 
@@ -42,7 +54,7 @@ farm, and it means every large piece ships with a small piece that links to it.
 | 9 | `best-one-time-purchase-mac-apps` | `show-desktop-button-on-dock` |
 | 10 | `macos-never-supported-per-profile-dock-icons` | `mission-control-button-on-dock` |
 | 11 | `mac-apps-that-fix-macos-annoyances` | `remove-recent-apps-from-dock` |
-| 12 | `alttab-vs-dockdoor` | `clear-individual-recent-items-dock` |
+| 12 | **`dockdoor-alternative`** | `clear-individual-recent-items-dock` |
 | 13 | `best-macos-tahoe-apps` | `mac-dock-blurry-icons-tahoe` + screenshot |
 | 14 | `wrong-client-tab-screen-share` | `stop-minimized-windows-cluttering-dock` |
 
@@ -64,18 +76,47 @@ farm, and it means every large piece ships with a small piece that links to it.
 |---|---|---|
 | 22 | `best-mac-apps-for-teachers` | `is-it-safe-to-grant-accessibility` |
 | 23 | `best-mac-apps-for-recruiters` | `how-the-licence-works` |
-| 24 | `cDock-alternative` | `managed-mac-mdm-questions` |
+| 24 | **`cdock-alternative`** | `managed-mac-mdm-questions` |
 | 25 | `best-mac-apps-small-business` | `browser-profiles-for-focus-adhd` |
 | 26 | `mac-apps-worth-paying-for` | `dock-on-every-display-explained` |
-| 27 | `setapp-alternatives` | `superdock-vs-dockdoor` |
+| 27 | `setapp-alternatives` | **`activedock-alternative`** |
 | 28 | `best-mac-apps-for-developers` | `you-dont-need-an-antidetect-browser` |
 
 ## Week 5 (days 29 to 30): the pillars
 
 | Day | Large | Small |
 |---|---|---|
-| 29 | **`/best-mac-apps/` PILLAR** | `hyperdock-alternative` |
-| 30 | **`/chrome-profiles-on-mac/` PILLAR** | `ubar-vs-activedock` |
+| 29 | **`/best-mac-apps/` PILLAR** | **`hyperdock-alternative`** |
+| 30 | **`/chrome-profiles-on-mac/` PILLAR** | **`parallel-spaces-alternative`** |
+
+
+## Alternative pages, and why they are separate from the vs pages
+
+We have twelve `superdock-vs-X` pages and, until now, **zero `X-alternative`
+pages.** That is a commercial gap, not a cosmetic one.
+
+Somebody searching **"Superdock vs uBar"** already knows we exist. Somebody
+searching **"uBar alternative"** does not, and there are far more of them. The
+alternative query is the one where an unhappy customer of a competitor is
+actively shopping, which is the highest intent moment in this entire market.
+
+**The competitor rule.** Direct dock competitors are named on comparison and
+alternative pages, where the reader came looking for exactly that comparison and
+a fair answer builds trust. They are **not** named in listicles, where including
+a rival simply hands them exposure we paid to create.
+
+| Page | Target query | Incumbent status | Priority |
+|---|---|---|---|
+| `ubar-alternative` | uBar alternative | Alive but resented. $50 for two Macs, and a support thread describing it as abandonware | **Highest.** The price gap is the whole argument |
+| `dockdoor-alternative` | DockDoor alternative | Alive, free, open source and well liked | Handle carefully. Hostility fails here. Position on replacing the Dock versus decorating it |
+| `cdock-alternative` | cDock alternative | Effectively dead, with users asking for macOS 15 support and no newer release | High. Genuinely stranded users and no vendor competing |
+| `activedock-alternative` | ActiveDock alternative | Alive, but 3.6 out of 5 with documented refund complaints | Medium |
+| `hyperdock-alternative` | HyperDock alternative | Dead. Competitors' own pages call it legacy | Low volume, cheap to write |
+| `parallel-spaces-alternative` | Parallel Spaces alternative | Alive, actively marketing, and the closest rival on the paid feature | Medium. A genuine architectural argument to make |
+
+**Not worth writing:** AltTab alternative, because AltTab is free, loved, and four
+vendor pages already compete there. Shift, Rambox and Station alternatives, because
+those are unified inbox products and a dock utility is not a substitute.
 
 ## Held back deliberately
 

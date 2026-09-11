@@ -35,7 +35,20 @@ profiles are useless against fingerprinting, and that audience is leaving Chrome
 9. No em dashes anywhere, including titles and meta descriptions.
 10. **Never promise faster switching.** For ADHD readers friction is the feature.
     Promise knowing where you are.
-11. Keep FAQ sections AND their FAQPage markup. Google retired the rich result
+11. **Never name a direct dock competitor in a listicle.** DockDoor, uBar,
+    ActiveDock, DockFix, ExtraDock, InfyniDock, Sidebar and the rest belong on
+    comparison and alternative pages only, where the reader arrived looking for
+    exactly that comparison. In a listicle, including a rival hands them exposure
+    we paid to create. Non-competing apps (Raycast, Rectangle, AltTab, Maccy,
+    Ice, LinearMouse) can and should be praised generously, because that is what
+    makes a listicle credible.
+12. **Only ever link BACKWARDS, to pages that are already live.** Content is
+    published on a schedule, so a link to a piece that ships next week is a 404
+    until it does. Each new piece links to previously published pages, never to
+    scheduled ones, and we do not retrofit inbound links into live pages ahead of
+    time either. Discovery of a new page comes from the sitemap, not from links
+    planted early.
+13. Keep FAQ sections AND their FAQPage markup. Google retired the rich result
     on 7 May 2026, so it earns no search feature, but the markup is harmless and
     five of six ranking pages still carry it. It still feeds AI extraction.
 
