@@ -1,8 +1,7 @@
 # Image style reference
 
-Status: reference only. No prompts written yet. Prompts get built once the
-topic list in `content-queue.md` is finalised, so each image is made for a
-specific page rather than generated speculatively.
+Status: **SETTLED 12 September 2026.** Palette and object vocabulary decided
+from the app icon. Prompts are in `image-prompts-batch-1.md` onward.
 
 ## Why this doc exists
 The owner generates images in bulk via Gemini using long, highly specified
@@ -67,3 +66,54 @@ pillar page. Answer pages currently use the app icon and may not need art.
 4. How many images per piece, and at what sizes (OG is 1200x630, hero is wider).
 5. Whether images are decorative (then `alt=""`) or informative (then real alt
    text, which affects SEO and accessibility).
+
+---
+
+# SETTLED DECISIONS (12 September 2026)
+
+## Palette, taken from the app icon
+
+The icon answered the open question. It is **three white tiles on near-black**:
+one upright in the centre, two fanning outward. That is the brand in one image,
+and it is also literally what the product does.
+
+| Role | Hex | Where it comes from |
+|---|---|---|
+| Deep ground | `#08080a` | site `--bg` |
+| Raised ground | `#0f0f13` | site `--bg-soft` |
+| Icon charcoal | `#343437` to `#3a3a3e` | sampled from the icon body |
+| Tile white | `#ffffff` | the icon's tiles |
+| Warm ink | `#f4f4f6` | site `--ink` |
+| Accent blue | `#2e93ff` | site `--accent` |
+| Deep accent | `#1669e0` | site `--accent-btn` |
+
+**Images are dark and match the UI.** A light image on this site would read as a
+foreign object. Blue is an accent only, used for the one lit element, never as a
+field.
+
+## Object vocabulary, locked
+
+Derived from the icon rather than invented. Every prompt uses these and nothing
+else, so the set stays coherent across sixty images.
+
+| Object | Means |
+|---|---|
+| **Upright white tile** | one app, one identity, the thing that is yours |
+| **Tiles fanning outward from one** | one icon becoming several profiles. The core product idea |
+| **A rail of tiles** | the dock itself |
+| **Two identical tiles, one gaining a mark** | work versus personal |
+| **One tile duplicated across separate planes** | a dock on every display |
+| **A fan of panes collapsing into one** | the window switcher |
+| **An empty lit slot at the end of a rail** | edge actions |
+| **A tile dimming while its neighbours stay lit** | running versus not running |
+
+Materials: matte charcoal grounds, milk-white tiles with soft edge bevels, a
+single blue light source. No chrome, no glass, no freight, no paperwork.
+
+## Sizes
+
+| Use | Size | Empty region |
+|---|---|---|
+| OG card, every page | 1200x630 | left third |
+| Blog hero | 1536x1024 | left third or top third |
+| Inline diagram | 1200x800 | none, object centred |
