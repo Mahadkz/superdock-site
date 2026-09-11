@@ -1,12 +1,26 @@
-// Superdock checkout via Paddle.js (overlay). Live account only.
+// Superdock checkout, through Lemon Squeezy.
 //
-// LICENCES_OPEN is false while Paddle finishes verifying the account: no
-// checkout can be created until then, so the Buy buttons are replaced in the
-// HTML by a waiting-list form. To reopen sales: set LICENCES_OPEN = true,
-// restore the "Buy now, $7.99" links (data-checkout) on index.html and
-// buy.html, and put data-auto-checkout back on buy.html's body.
+// Lemon Squeezy is the merchant of record: it takes the payment, handles VAT and
+// pays affiliates. Our Cloudflare Worker receives the `order_created` webhook,
+// signs an Ed25519 licence of our own and emails it. Their licence-key feature
+// is deliberately OFF on the variant, because the app verifies OUR signature
+// offline and must keep working without a network.
+//
+// LICENCES_OPEN gates selling. While it is false the Buy buttons in the HTML are
+// a waiting-list form instead; to open sales set it true and restore the
+// "Buy now, $7.99" links (data-checkout) on index.html and buy.html.
+//
+// Affiliate attribution does NOT live here. `affiliate.js` (loaded on every
+// page) rewrites outbound Lemon Squeezy links itself, so an overlay opened from
+// a plain buy URL carries the referral without any code from us. That is only
+// true for static buy URLs: a checkout created through their API has no
+// affiliate field, which is one reason the variant is priced at $7.99 directly
+// rather than discounted from $13.99 at checkout time.
 (function () {
   var LICENCES_OPEN = false;
+
+  // The store's own checkout URL for the single Superdock variant.
+  var BUY_URL = "https://superdock.lemonsqueezy.com/checkout/buy/99f6c090-2887-405f-8c78-bc99fc8c9583";
 
   // Waiting list, live whether or not licences are open.
   document.querySelectorAll("form[data-notify]").forEach(function (form) {
@@ -35,50 +49,57 @@
   });
 
   if (!LICENCES_OPEN) return;
-  var PADDLE_TOKEN = "live_584bba7661f8225e229c71a0f6b";   // live client-side token (public by design)
-  var PRICE_ID = "pri_01m1hqayef0071qrwkgn0277hb"; // $13.99 list price (live)
-  var DISCOUNT_ID = "dsc_01m1hqazephp81svnaszsrg0cv"; // launch discount, $6.00 off, applied automatically
 
-  function boot() {
-    if (typeof Paddle === "undefined") return;
-    Paddle.Initialize({ token: PADDLE_TOKEN });
+  // Their overlay. `embed=1` is what makes the link open in place rather than
+  // navigating away; `LemonSqueezy.Url.Open` needs lemon.js to have loaded.
+  function checkoutURL() {
+    var url = BUY_URL + "?embed=1&media=0";
+    // affiliate.js exposes the referral it is tracking; adding it by hand is
+    // harmless when there is none and is what keeps attribution working if the
+    // script ever rewrites a link we built after it ran.
+    try {
+      if (window.LemonSqueezy && window.LemonSqueezy.Affiliate) {
+        url = window.LemonSqueezy.Affiliate.Build(url);
+      }
+    } catch (e) { /* attribution is best effort; never block a sale */ }
+    return url;
+  }
 
-    // This page is also Paddle's "default payment link": a transaction created
-    // through the API links here as ?_ptxn=<id>, and Paddle.js opens that exact
-    // transaction itself. Opening our own price checkout as well would fight it.
-    if (/[?&]_ptxn=/.test(window.location.search)) return;
-
-    // buy.html (the app's Buy button lands here): open the checkout at once.
-    if (document.body && document.body.hasAttribute("data-auto-checkout")) {
-      Paddle.Checkout.open({ items: [{ priceId: PRICE_ID, quantity: 1 }], discountId: DISCOUNT_ID });
+  function open() {
+    if (window.LemonSqueezy && window.LemonSqueezy.Url) {
+      window.LemonSqueezy.Url.Open(checkoutURL());
+    } else {
+      window.location = checkoutURL();
     }
+  }
 
+  // lemon.js loads only when someone reaches for Buy, so it costs nothing on
+  // first paint, and buy.html needs it at once.
+  function ensureLemon(then) {
+    if (window.createLemonSqueezy) { window.createLemonSqueezy(); then(); return; }
+    var s = document.createElement("script");
+    s.src = "https://assets.lemonsqueezy.com/lemon.js";
+    s.defer = true;
+    s.onload = function () { if (window.createLemonSqueezy) window.createLemonSqueezy(); then(); };
+    s.onerror = function () { window.location = BUY_URL; };
+    document.head.appendChild(s);
+  }
+
+  function bind() {
     document.querySelectorAll("[data-checkout]").forEach(function (el) {
       el.addEventListener("click", function (e) {
         e.preventDefault();
-        // If the token hasn't been filled in yet, fall back to the download page.
-        if (PADDLE_TOKEN.indexOf("REPLACE") !== -1) { window.location = "download.html"; return; }
-        Paddle.Checkout.open({ items: [{ priceId: PRICE_ID, quantity: 1 }], discountId: DISCOUNT_ID });
+        ensureLemon(open);
       });
     });
+    if (document.body && document.body.hasAttribute("data-auto-checkout")) {
+      ensureLemon(open);
+    }
   }
 
-  // Paddle's script (and the cookies it sets) load only when someone reaches
-  // for the Buy button, or on buy.html which needs the checkout at once.
-  function ensurePaddle(then) {
-    if (typeof Paddle !== "undefined") { then(); return; }
-    var s = document.createElement("script"); s.src = "https://cdn.paddle.com/paddle/v2/paddle.js"; s.onload = then; document.head.appendChild(s);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", bind);
+  } else {
+    bind();
   }
-  function start() {
-    if (document.body && document.body.hasAttribute("data-auto-checkout")) { ensurePaddle(boot); return; }
-    document.querySelectorAll("[data-checkout]").forEach(function (el) {
-      el.addEventListener("click", function (e) {
-        if (typeof Paddle !== "undefined") return;   // boot() already bound the real handler
-        e.preventDefault(); e.stopImmediatePropagation();
-        ensurePaddle(function () { boot(); el.click(); });
-      }, true);
-    });
-  }
-  if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", start);
-  else start();
 })();

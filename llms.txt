@@ -11,13 +11,14 @@ Key facts:
 - How it works: Chrome keeps running as one process; Superdock attributes windows to profiles from window titles and Chrome's profile list. No second Chrome instance, so no extra memory and no re-login.
 - Permissions: Accessibility (required). Screen Recording (optional, live thumbnails).
 - Distribution: direct download and in-app updates over a signed feed; not on the Mac App Store (it uses private macOS Dock interfaces).
+- Affiliates: 30% of every referred licence ($2.40 a sale), link-tracked with a 30-day window, run and paid by Lemon Squeezy. Apply at https://superdock.lemonsqueezy.com/affiliates
 - Contact: hello@superdock.app
 
 ## Pages
 
 - [Overview and FAQ](https://superdock.app/index.html.md): what Superdock does, how it differs from separate Chrome instances, price, requirements
 - [Download](https://superdock.app/download.html.md): current version, how to install, the one permission it asks for
-- [Terms of Sale](https://superdock.app/terms.html): licence to up to five Macs, updates, payment by Paddle
+- [Terms of Sale](https://superdock.app/terms.html): licence to up to five Macs, updates, payment by Lemon Squeezy
 - [Refund Policy](https://superdock.app/refund.html)
 - [Privacy Policy](https://superdock.app/privacy.html)
 
@@ -67,3 +68,9 @@ Superdock against each other Dock app, using facts from that app's own website, 
 
 - [Why one Dock icon per Chrome profile](https://superdock.app/blog/why-superdock.html): the reasoning behind the product
 - [Manage your licence](https://superdock.app/manage.html): see and remove the Macs on a licence
+- [Is there a free Mac Dock alternative?](https://superdock.app/answers/free-mac-dock-alternative.html)
+- [Is there a Mac Dock replacement with no subscription?](https://superdock.app/answers/free-mac-dock-replacement-no-subscription.html)
+- [Why is Alt-Tab not working on my Mac?](https://superdock.app/answers/alt-tab-not-working-on-mac.html)
+- [How do I switch between windows of the same app on a Mac?](https://superdock.app/answers/switch-between-windows-same-app-mac.html)
+- [Can the Mac app switcher show window thumbnails?](https://superdock.app/answers/mac-app-switcher-with-thumbnails.html)
+- [Why is the Dock not showing on my second monitor?](https://superdock.app/answers/dock-not-showing-on-second-monitor-mac.html)
