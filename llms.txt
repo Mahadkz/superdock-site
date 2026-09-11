@@ -37,6 +37,8 @@ Direct answers to the questions Mac users ask, two sentences first, then the hon
 - [Why does Command-Tab not bring back minimized windows on a Mac?](https://superdock.app/answers/why-cmd-tab-does-not-show-minimized-windows-mac.html)
 - [Why do maximized windows go under the Dock in macOS 26 Tahoe?](https://superdock.app/answers/windows-go-under-dock-macos-tahoe.html)
 
+- [Which Mac app affiliate programs are actually worth joining?](https://superdock.app/answers/mac-app-affiliate-programs.html)
+
 ## Comparisons
 
 Superdock against each other Dock app, using facts from that app's own website, with a "choose them if" section on every page.
@@ -61,6 +63,8 @@ Superdock against each other Dock app, using facts from that app's own website, 
 - [How to show the Dock on every monitor on a Mac](https://superdock.app/blog/dock-on-every-monitor-mac.html)
 - [Mac Dock replacements in 2026: what each one actually changes](https://superdock.app/blog/mac-dock-replacements-2026.html)
 - [Chrome profiles vs separate Chrome instances on Mac: memory, logins and Dock icons](https://superdock.app/blog/chrome-profiles-vs-separate-instances.html)
+
+- [How to earn from writing about Mac apps](https://superdock.app/blog/earning-from-mac-app-reviews.html)
 
 ## Optional
 
