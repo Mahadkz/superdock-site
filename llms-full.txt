@@ -41,7 +41,7 @@ Clicking any folder pinned to the dock opens its contents in a grid or list stac
 ## 3. Frequently Asked Questions (FAQ)
 
 ### Q: How is Superdock different from running separate Chrome instances?
-A: Competitors launch separate Chrome instances using `--user-data-dir`, which consumes ~2.8x memory and forces re-logging into all Google accounts. Superdock keeps Chrome as a single process, reading window titles and profile metadata.
+A: Competitors launch separate Chrome instances using `--user-data-dir`, which we measured at about 2.8x memory (1.67 GB across 11 processes became 4.6 GB across 33, with three profiles and ~35 tabs) and forces re-logging into all Google accounts. Superdock keeps Chrome as a single process, reading window titles and profile metadata.
 
 ### Q: Does Superdock work with Apple Silicon and Intel?
 A: Yes, Superdock is compiled as a Universal 2 binary supporting both Apple Silicon (M1/M2/M3/M4) and Intel Macs on macOS 14 Sonoma or later.
