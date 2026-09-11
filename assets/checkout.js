@@ -6,9 +6,8 @@
 // is deliberately OFF on the variant, because the app verifies OUR signature
 // offline and must keep working without a network.
 //
-// LICENCES_OPEN gates selling. While it is false the Buy buttons in the HTML are
-// a waiting-list form instead; to open sales set it true and restore the
-// "Buy now, $7.99" links (data-checkout) on index.html and buy.html.
+// LICENCES_OPEN gates selling. Set it false and restore the waiting-list form in
+// the HTML to close sales again without deploying anything else.
 //
 // Affiliate attribution does NOT live here. `affiliate.js` (loaded on every
 // page) rewrites outbound Lemon Squeezy links itself, so an overlay opened from
@@ -17,7 +16,7 @@
 // affiliate field, which is one reason the variant is priced at $7.99 directly
 // rather than discounted from $13.99 at checkout time.
 (function () {
-  var LICENCES_OPEN = false;
+  var LICENCES_OPEN = true;
 
   // The store's own checkout URL for the single Superdock variant.
   var BUY_URL = "https://superdock.lemonsqueezy.com/checkout/buy/99f6c090-2887-405f-8c78-bc99fc8c9583";

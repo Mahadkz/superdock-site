@@ -19,7 +19,7 @@ Other tools launch a separate copy of Chrome per profile, costing about 2.8x the
 
 ## Price
 
-$7.99 once (launch price, list $13.99). One licence, up to five Macs, every update included, no subscription. The dock itself is free to download and stays free; the price is for the Chrome profile icons, after a 14-day trial with no account or card. Payment by Lemon Squeezy, which is the merchant of record. Affiliates earn 30% of a referred sale. Licences are not on sale yet while Lemon Squeezy completes business verification; https://superdock.app/buy.html takes your email and tells you when they open.
+$7.99 once (launch price, list $13.99). One licence, up to five Macs, every update included, no subscription. The dock itself is free to download and stays free; the price is for the Chrome profile icons, after a 14-day trial with no account or card. Payment by Lemon Squeezy, which is the merchant of record. Affiliates earn 30% of a referred sale. Buy at https://superdock.app/buy.html
 
 ## Requirements
 
