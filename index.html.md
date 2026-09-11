@@ -27,12 +27,12 @@ macOS 14 or later. Accessibility permission (required). Screen Recording (option
 
 ## Links
 
-- Download: https://superdock.app/Superdock-1.0.1.dmg
+- Download: https://superdock.app/Superdock-1.0.3.dmg
 - Download page: https://superdock.app/download.html
 - Terms: https://superdock.app/terms.html, Refunds: https://superdock.app/refund.html, Privacy: https://superdock.app/privacy.html
 - Contact: hello@superdock.app
 
-Updated 3 September 2026, Superdock 1.0.1.
+Updated 3 September 2026, Superdock 1.0.3.
 
 
 ## Answers and comparisons

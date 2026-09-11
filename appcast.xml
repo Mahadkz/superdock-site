@@ -2,6 +2,15 @@
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
     <channel>
         <item>
+            <title>1.0.3</title>
+            <pubDate>Fri, 11 Sep 2026 16:42:09 +0000</pubDate>
+            <sparkle:version>202609112142</sparkle:version>
+            <sparkle:shortVersionString>1.0.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <link>https://superdock.app/Superdock-1.0.3.dmg</link>
+            <enclosure url="https://superdock.app/Superdock-1.0.3.dmg" sparkle:edSignature="c0mieqvSX/LJrgVtelYyWxh3bovMk1thSfPjL21vh6Q7Rj4U9M9IjgDRNVgaaRubHRIo7oT4NRdoNBEdjBDzBw==" length="2830015" type="application/octet-stream" />
+        </item>
+        <item>
             <title>1.0.1</title>
             <pubDate>Wed, 02 Sep 2026 20:36:02 +0000</pubDate>
             <sparkle:version>202609030136</sparkle:version>
