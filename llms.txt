@@ -82,3 +82,5 @@ Superdock against each other Dock app, using facts from that app's own website, 
 - [How do I switch between windows of the same app on a Mac?](https://superdock.app/answers/switch-between-windows-same-app-mac.html)
 - [Can the Mac app switcher show window thumbnails?](https://superdock.app/answers/mac-app-switcher-with-thumbnails.html)
 - [Why is the Dock not showing on my second monitor?](https://superdock.app/answers/dock-not-showing-on-second-monitor-mac.html)
+- [Best Mac apps for 8GB of RAM](https://superdock.app/answers/best-mac-apps-8gb-ram.html)
+- [Why does clicking a Dock icon bring all windows to the front?](https://superdock.app/answers/why-clicking-dock-icon-brings-all-windows.html)
