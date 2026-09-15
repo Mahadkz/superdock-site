@@ -86,3 +86,5 @@ Superdock against each other Dock app, using facts from that app's own website, 
 - [Why does clicking a Dock icon bring all windows to the front?](https://superdock.app/answers/why-clicking-dock-icon-brings-all-windows.html)
 - [Best Mac apps under $10](https://superdock.app/answers/best-mac-apps-under-10-dollars.html)
 - [Shortcut to toggle between windows of the same app on Mac](https://superdock.app/answers/shortcut-toggle-windows-same-app.html)
+- [Why do all Chrome profiles share one Dock icon on Mac?](https://superdock.app/answers/why-chrome-profiles-share-one-dock-icon.html)
+- [Keyboard shortcut to restore a minimized window on Mac](https://superdock.app/answers/restore-minimized-window-shortcut.html)
