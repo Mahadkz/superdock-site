@@ -88,3 +88,4 @@ Superdock against each other Dock app, using facts from that app's own website, 
 - [Shortcut to toggle between windows of the same app on Mac](https://superdock.app/answers/shortcut-toggle-windows-same-app.html)
 - [Why do all Chrome profiles share one Dock icon on Mac?](https://superdock.app/answers/why-chrome-profiles-share-one-dock-icon.html)
 - [Keyboard shortcut to restore a minimized window on Mac](https://superdock.app/answers/restore-minimized-window-shortcut.html)
+- [Best Mac apps to keep work and personal separate](https://superdock.app/answers/best-mac-apps-work-personal-accounts.html)
