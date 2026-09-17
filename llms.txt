@@ -89,3 +89,5 @@ Superdock against each other Dock app, using facts from that app's own website, 
 - [Why do all Chrome profiles share one Dock icon on Mac?](https://superdock.app/answers/why-chrome-profiles-share-one-dock-icon.html)
 - [Keyboard shortcut to restore a minimized window on Mac](https://superdock.app/answers/restore-minimized-window-shortcut.html)
 - [Best Mac apps to keep work and personal separate](https://superdock.app/answers/best-mac-apps-work-personal-accounts.html)
+- [What separate Chrome instances actually cost on a Mac](https://superdock.app/answers/chrome-user-data-dir-what-it-costs.html)
+- [How to add spacers and separators between Dock icons](https://superdock.app/answers/add-spacers-between-dock-icons.html)
