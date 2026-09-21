@@ -1,13 +1,15 @@
 # Superdock: one Dock icon per Chrome profile on your Mac
 
-Superdock is a Mac Dock replacement that gives every Chrome profile its own Dock icon. macOS folds all your profiles into one icon; Superdock separates them, and leaves the rest of your Mac exactly as it is.
+Superdock is a Mac Dock replacement built around one problem: macOS gives one Dock icon per running app, so several windows of the same app collapse behind one icon and you cannot tell which is which without hovering or right-clicking. Chrome is the worst case, because every profile runs in one process and so shares a single icon.
+
+Superdock gives every Chrome profile its own icon carrying that profile's avatar, so work, personal and client are distinguishable at rest rather than after a hover. The rest of your Mac is left exactly as it is.
 
 - Folder stacks: click a folder in the dock to open its contents above it, grid or list, folders first. Downloads is pinned on first launch if the Dock has no folders.
 
 ## What you get
 
 - One icon per Chrome profile, with that profile's avatar. Right-click and hover show only that profile's windows.
-- Window previews: hover an app to see its windows and jump to one.
+- Window previews: hover an app to see a picture of each open window and jump to one. For editors the caption leads with the project rather than the file, so several windows of one editor stay distinguishable.
 - An Alt-Tab style window switcher (Option-Tab, or Command-Tab if you prefer), off by default.
 - A dock on every display, showing the apps whose windows are on that display.
 - Dock edges you can click: Mission Control on one end, Show Desktop on the other, configurable.

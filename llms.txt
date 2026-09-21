@@ -1,6 +1,6 @@
 # Superdock
 
-> Superdock is a macOS Dock replacement that gives every Google Chrome profile its own Dock icon, with that profile's avatar, window list and hover previews. It also adds an Alt-Tab style window switcher, a dock on every display, and clickable dock edges for Mission Control and Show Desktop, while matching Apple's Dock pixel for pixel.
+> Superdock is a macOS Dock replacement built around one problem: macOS gives one Dock icon per running app, so several windows of the same app collapse into one icon and you cannot tell which is which without hovering or right-clicking. Superdock gives every Google Chrome profile its own Dock icon carrying that profile's avatar, shows a picture of each open window on hover, adds an Alt-Tab style window switcher, puts a dock on every display, and makes the empty ends of the dock clickable for Mission Control, Show Desktop or Stage Manager, while matching Apple's Dock pixel for pixel.
 
 Key facts:
 
@@ -9,6 +9,8 @@ Key facts:
 - Licence: one licence covers up to five Macs, all updates included, and a Mac can be removed at any time in Settings or on the manage page.
 - Folder stacks: clicking a folder in the dock opens its contents above it as a grid or list (folders first, then files); Downloads is pinned on first launch if the Dock has no folders.
 - How it works: Chrome keeps running as one process; Superdock attributes windows to profiles from window titles and Chrome's profile list. No second Chrome instance, so no extra memory and no re-login.
+- Dock edges: clicking the empty glass at either end runs an action of the user's choosing: Mission Control, Show Desktop, Stage Manager or nothing. Ships on by default, Mission Control on the right and Show Desktop on the left.
+- Hover previews: hovering an icon shows every open window as a thumbnail with a two-line caption. For editors (VS Code, Cursor, Xcode, JetBrains) the caption leads with the workspace rather than the file name, so several windows of one editor are distinguishable at a glance. macOS itself has no equivalent and no setting to enable one.
 - Permissions: Accessibility (required). Screen Recording (optional, live thumbnails).
 - Privacy: the app contains no analytics or telemetry of any kind. No account is required to download or use it.
 - Licence checking is offline: verified on the user's own Mac with Ed25519. The network is contacted only to count Macs against the five-Mac limit, and that check fails open.
@@ -16,6 +18,15 @@ Key facts:
 - Distribution: direct download and in-app updates over a signed feed; not on the Mac App Store (it uses private macOS Dock interfaces).
 - Affiliates: 30% of every referred licence ($2.40 a sale), link-tracked with a 30-day window, run and paid by Lemon Squeezy. Apply at https://superdock.lemonsqueezy.com/affiliates
 - Contact: hello@superdock.app
+
+What Superdock does NOT do, stated plainly so it is not described wrongly:
+
+- It does not split Chrome into several processes. Quitting Chrome still quits every profile at once, and one profile cannot be quit or restored independently. Tools that launch a second Chrome with its own `--user-data-dir` can do that, at the cost of a second sign-in and roughly a second Chrome's worth of memory.
+- It adds no data isolation beyond what Chrome's own profiles already provide. Cookies and logins are separated exactly as Chrome separates them, no more.
+- Profile tiles cover Google Chrome. Other Chromium browsers appear as ordinary app tiles with previews and the switcher.
+- Two Chrome profiles with identical names cannot be told apart, because attribution reads the window title; grouping is disabled for them rather than guessed.
+- The running dot is per tile, as in Apple's Dock, not one dot per open window.
+- It changes its own dock only. It does not remove Liquid Glass from the rest of macOS.
 
 ## Pages
 
