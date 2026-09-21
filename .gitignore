@@ -2,3 +2,4 @@
 # Secrets
 .env
 .dev.vars
+.DS_Store
