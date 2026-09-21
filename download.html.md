@@ -1,6 +1,6 @@
 # Download Superdock
 
-Current version: 1.0.1 for macOS 14 or later. Direct download: https://superdock.app/Superdock-1.0.3.dmg (signed with an Apple Developer ID and notarized; opens with a double-click).
+Current version: 1.0.1 for macOS 14 or later. Direct download: https://superdock.app/Superdock-1.0.4.dmg (signed with an Apple Developer ID and notarized; opens with a double-click).
 
 ## How it works
 
