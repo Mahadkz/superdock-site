@@ -28,3 +28,4 @@ User-agent: YouBot
 Allow: /
 
 Sitemap: https://superdock.app/sitemap.xml
+Sitemap: https://superdock.app/sitemap-video.xml

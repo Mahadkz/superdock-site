@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://superdock.app/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://superdock.app/assets/video/hero-poster.jpg</video:thumbnail_loc>
+      <video:title>Superdock giving each Chrome profile its own Dock icon</video:title>
+      <video:description>Chrome runs every profile in one process, so macOS shows one Dock icon for all of them. Superdock draws its own dock and gives each profile its own icon with that profile's avatar.</video:description>
+      <video:content_loc>https://superdock.app/assets/video/hero.mp4</video:content_loc>
+      <video:duration>10</video:duration>
+      <video:publication_date>2026-09-22</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://superdock.app/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://superdock.app/assets/video/profiles-poster.jpg</video:thumbnail_loc>
+      <video:title>Work, personal and client Chrome profiles as separate Dock icons</video:title>
+      <video:description>Three Chrome profiles shown as three separate Dock icons, each with its own avatar and its own window list.</video:description>
+      <video:content_loc>https://superdock.app/assets/video/profiles.mp4</video:content_loc>
+      <video:duration>8</video:duration>
+      <video:publication_date>2026-09-22</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://superdock.app/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://superdock.app/assets/video/switcher-poster.jpg</video:thumbnail_loc>
+      <video:title>The Superdock window switcher showing every open window</video:title>
+      <video:description>Holding Option-Tab to show every open window as a picture, including minimised windows that Command-Tab skips.</video:description>
+      <video:content_loc>https://superdock.app/assets/video/switcher.mp4</video:content_loc>
+      <video:duration>4</video:duration>
+      <video:publication_date>2026-09-22</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://superdock.app/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://superdock.app/assets/video/edges-poster.jpg</video:thumbnail_loc>
+      <video:title>Clicking the end of the dock to open Mission Control</video:title>
+      <video:description>Clicking the empty glass at the end of the dock to open Mission Control, with no hot corner and no keyboard shortcut.</video:description>
+      <video:content_loc>https://superdock.app/assets/video/edges.mp4</video:content_loc>
+      <video:duration>5</video:duration>
+      <video:publication_date>2026-09-22</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://superdock.app/</loc>
+    <video:video>
+      <video:thumbnail_loc>https://superdock.app/assets/video/displays-poster.jpg</video:thumbnail_loc>
+      <video:title>A Superdock dock on each of two displays</video:title>
+      <video:description>A dock on each of two displays, each showing the apps whose windows are open on that screen.</video:description>
+      <video:content_loc>https://superdock.app/assets/video/displays.mp4</video:content_loc>
+      <video:duration>4</video:duration>
+      <video:publication_date>2026-09-22</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+</urlset>
