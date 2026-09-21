@@ -101,4 +101,6 @@ Superdock against each other Dock app, using facts from that app's own website, 
 - [Keyboard shortcut to restore a minimized window on Mac](https://superdock.app/answers/restore-minimized-window-shortcut.html)
 - [Best Mac apps to keep work and personal separate](https://superdock.app/answers/best-mac-apps-work-personal-accounts.html)
 - [What separate Chrome instances actually cost on a Mac](https://superdock.app/answers/chrome-user-data-dir-what-it-costs.html)
+- [How to get the Downloads folder back in your Mac's Dock](https://superdock.app/answers/downloads-folder-in-dock-mac.html)
+- [How to open Mission Control with your mouse on a Mac](https://superdock.app/answers/open-mission-control-with-mouse-mac.html)
 - [How to add spacers and separators between Dock icons](https://superdock.app/answers/add-spacers-between-dock-icons.html)
