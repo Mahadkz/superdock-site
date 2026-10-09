@@ -1,6 +1,15 @@
 User-agent: *
 Allow: /
 
+# The .md files are plain-text copies of pages for AI assistants. Search engines index the HTML.
+User-agent: Googlebot
+Allow: /
+Disallow: /*.md$
+
+User-agent: Bingbot
+Allow: /
+Disallow: /*.md$
+
 # AI & Search Engine Crawlers
 User-agent: GPTBot
 Allow: /
