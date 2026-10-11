@@ -138,7 +138,6 @@ Superdock against each other Dock app, using facts from that app's own website, 
 - [About the developer, Mahad Kazmi](https://superdock.app/author/mahad-kazmi.html): who builds Superdock and why
 - [About Superdock](https://superdock.app/about.html): who makes it, how it is built, contact
 
-- [Why one Dock icon per Chrome profile](https://superdock.app/blog/why-superdock.html): the reasoning behind the product
 - [Manage your licence](https://superdock.app/manage.html): see and remove the Macs on a licence
 - [How do I switch between windows of the same app on a Mac?](https://superdock.app/answers/switch-between-windows-same-app-mac.html)
 - [Why does clicking a Dock icon bring all windows to the front?](https://superdock.app/answers/why-clicking-dock-icon-brings-all-windows.html)
